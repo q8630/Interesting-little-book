@@ -1,0 +1,914 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>hacker-laws · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="tool.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    有趣的网址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="accumulation.html">
+            
+                <a href="accumulation.html">
+            
+                    
+                    前端知识积累
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="tool.html">
+            
+                <a href="tool.html">
+            
+                    
+                    工具/软件类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="hacker-laws.html">
+            
+                <a href="hacker-laws.html">
+            
+                    
+                    hacker-laws
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >hacker-laws</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5BF9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6709;&#x7528;&#x7684;&#x5B9A;&#x5F8B;&#x3001;&#x7406;&#x8BBA;&#x3001;&#x539F;&#x5219;&#x548C;&#x6A21;&#x5F0F;">&#x5BF9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6709;&#x7528;&#x7684;&#x5B9A;&#x5F8B;&#x3001;&#x7406;&#x8BBA;&#x3001;&#x539F;&#x5219;&#x548C;&#x6A21;&#x5F0F;</h1>
+<p><a href="https://travis-ci.org/nusr/hacker-laws-zh" target="_blank"><img src="https://travis-ci.org/nusr/hacker-laws-zh.svg?branch=master" alt="Build Status"></a></p>
+<p><a href="https://github.com/dwmkerr/hacker-laws" target="_blank">hacker-laws</a> &#x7684;&#x7684;&#x4E2D;&#x6587;&#x7FFB;&#x8BD1;&#x3002;</p>
+<p>&#x5BF9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6709;&#x7528;&#x7684;&#x5B9A;&#x5F8B;&#x3001;&#x7406;&#x8BBA;&#x3001;&#x539F;&#x5219;&#x548C;&#x6A21;&#x5F0F;&#x3002;(Laws, Theories, Principles and Patterns that developers will find useful.)</p>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x9605;&#x8BFB;&#xFF0C;&#x7EF4;&#x57FA;&#x767E;&#x79D1;&#x589E;&#x52A0;&#x4E86;&#x4E2D;&#x6587;&#x94FE;&#x63A5;&#x3002;&#x82F1;&#x6587;&#x94FE;&#x63A5;&#x8868;&#x793A; <a href="https://github.com/dwmkerr/hacker-laws" target="_blank">hacker-laws</a> &#x9879;&#x76EE;&#x5C1A;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4E3B;&#x9898;&#x3002;</p>
+<ul>
+<li><a href="#%e4%bb%8b%e7%bb%8d">&#x4ECB;&#x7ECD;</a></li>
+<li><a href="#%e5%ae%9a%e5%be%8b">&#x5B9A;&#x5F8B;</a><ul>
+<li><a href="#%e9%98%bf%e5%a7%86%e8%be%be%e5%b0%94%e5%ae%9a%e5%be%8b-amdahls-law">&#x963F;&#x59C6;&#x8FBE;&#x5C14;&#x5B9A;&#x5F8B; (Amdahl&apos;s Law)</a></li>
+<li><a href="#%e5%b8%83%e9%b2%81%e5%85%8b%e6%96%af%e6%b3%95%e5%88%99-brookss-law">&#x5E03;&#x9C81;&#x514B;&#x65AF;&#x6CD5;&#x5219; (Brooks&apos;s Law)</a></li>
+<li><a href="#%e5%ba%b7%e5%a8%81%e5%ae%9a%e5%be%8b-conways-law">&#x5EB7;&#x5A01;&#x5B9A;&#x5F8B; (Conway&apos;s Law)</a></li>
+<li><a href="#%e5%9d%8e%e5%ae%81%e6%b1%89%e5%a7%86%e5%ae%9a%e5%be%8b-cunninghams-law">&#x574E;&#x5B81;&#x6C49;&#x59C6;&#x5B9A;&#x5F8B; (Cunningham&apos;s Law)</a></li>
+<li><a href="#%e9%82%93%e5%b7%b4%e6%95%b0%e5%ad%97-dunbars-number">&#x9093;&#x5DF4;&#x6570;&#x5B57; (Dunbar&apos;s Number)</a></li>
+<li><a href="#%e7%9b%96%e5%b0%94%e5%ae%9a%e5%be%8b-galls-law">&#x76D6;&#x5C14;&#x5B9A;&#x5F8B; (Gall&apos;s Law)</a></li>
+<li><a href="#%e5%8f%a4%e5%be%b7%e5%93%88%e7%89%b9%e5%ae%9a%e5%be%8b-goodharts-law">&#x53E4;&#x5FB7;&#x54C8;&#x7279;&#x5B9A;&#x5F8B; (Goodhart&apos;s Law)</a></li>
+<li><a href="#%e6%b1%89%e9%9a%86%e7%9a%84%e5%89%83%e5%88%80hanlons-razor">&#x6C49;&#x9686;&#x7684;&#x5243;&#x5200;&#xFF08;Hanlon&apos;s Razor&#xFF09;</a></li>
+<li><a href="#%e4%be%af%e4%b8%96%e8%be%be%e5%ae%9a%e5%be%8b-hofstadters-law">&#x4FAF;&#x4E16;&#x8FBE;&#x5B9A;&#x5F8B; (Hofstadter&apos;s Law)</a></li>
+<li><a href="#%e5%93%88%e4%bc%af%e7%89%b9%e5%ae%9a%e5%be%8b-hutbers-law">&#x54C8;&#x4F2F;&#x7279;&#x5B9A;&#x5F8B; (Hutber&apos;s Law)</a></li>
+<li><a href="#%e6%8a%80%e6%9c%af%e6%88%90%e7%86%9f%e5%ba%a6%e6%9b%b2%e7%ba%bf-the-hype-cycle--amaras-law">&#x6280;&#x672F;&#x6210;&#x719F;&#x5EA6;&#x66F2;&#x7EBF; (The Hype Cycle &amp; Amara&apos;s Law)</a></li>
+<li><a href="#%e9%9a%90%e5%bc%8f%e6%8e%a5%e5%8f%a3%e5%ae%9a%e5%be%8b-hyrums-law-or-the-law-of-implicit-interfaces">&#x9690;&#x5F0F;&#x63A5;&#x53E3;&#x5B9A;&#x5F8B; (Hyrum&apos;s Law or The Law of Implicit Interfaces)</a></li>
+<li><a href="#%e6%a2%85%e7%89%b9%e5%8d%a1%e5%a4%ab%e5%ae%9a%e5%be%8b-metcalfes-law">&#x6885;&#x7279;&#x5361;&#x592B;&#x5B9A;&#x5F8B; (Metcalfe&apos;s Law)</a></li>
+<li><a href="#%e6%91%a9%e5%b0%94%e5%ae%9a%e5%be%8b-moores-law">&#x6469;&#x5C14;&#x5B9A;&#x5F8B; (Moore&apos;s Law)</a></li>
+<li><a href="#%e5%a2%a8%e8%8f%b2%e5%ae%9a%e5%be%8b-murphys-law--sods-law">&#x58A8;&#x83F2;&#x5B9A;&#x5F8B; (Murphy&apos;s Law / Sod&apos;s Law)</a></li>
+<li><a href="#%e5%b8%95%e9%87%91%e6%a3%ae%e5%ae%9a%e7%90%86-parkinsons-law">&#x5E15;&#x91D1;&#x68EE;&#x5B9A;&#x7406; (Parkinson&apos;s Law)</a></li>
+<li><a href="#%e8%bf%87%e6%97%a9%e4%bc%98%e5%8c%96%e6%95%88%e5%ba%94-premature-optimization-effect">&#x8FC7;&#x65E9;&#x4F18;&#x5316;&#x6548;&#x5E94; (Premature Optimization Effect)</a></li>
+<li><a href="#%e6%99%ae%e7%89%b9%e5%ae%9a%e5%be%8b-putts-law">&#x666E;&#x7279;&#x5B9A;&#x5F8B; (Putt&apos;s Law)</a></li>
+<li><a href="#%e9%87%8c%e5%be%b7%e5%ae%9a%e5%be%8b-reeds-law">&#x91CC;&#x5FB7;&#x5B9A;&#x5F8B; (Reed&apos;s Law)</a></li>
+<li><a href="#%e5%a4%8d%e6%9d%82%e6%80%a7%e5%ae%88%e6%81%92%e5%ae%9a%e5%be%8b-the-law-of-conservation-of-complexity-or-teslers-law">&#x590D;&#x6742;&#x6027;&#x5B88;&#x6052;&#x5B9A;&#x5F8B; (The Law of Conservation of Complexity or Tesler&apos;s Law)</a></li>
+<li><a href="#%e6%8a%bd%e8%b1%a1%e6%b3%84%e6%bc%8f%e5%ae%9a%e5%be%8b-the-law-of-leaky-abstractions">&#x62BD;&#x8C61;&#x6CC4;&#x6F0F;&#x5B9A;&#x5F8B; (The Law of Leaky Abstractions)</a></li>
+<li><a href="#%e5%b8%95%e9%87%91%e6%a3%ae%e7%90%90%e7%a2%8e%e5%ae%9a%e7%90%86-the-law-of-triviality">&#x5E15;&#x91D1;&#x68EE;&#x7410;&#x788E;&#x5B9A;&#x7406; (The Law of Triviality)</a></li>
+<li><a href="#unix-%e5%93%b2%e5%ad%a6-the-unix-philosophy">Unix &#x54F2;&#x5B66; (The Unix Philosophy)</a></li>
+<li><a href="#spotify-%e6%a8%a1%e5%9e%8b-the-spotify-model">Spotify &#x6A21;&#x578B; (The Spotify Model)</a></li>
+<li><a href="#%e6%b2%83%e5%be%b7%e5%8b%92%e5%ae%9a%e5%be%8b-wadlers-law">&#x6C83;&#x5FB7;&#x52D2;&#x5B9A;&#x5F8B; (Wadler&apos;s Law)</a></li>
+<li><a href="#%e6%83%a0%e9%a1%bf%e5%ae%9a%e5%be%8b-wheatons-law">&#x60E0;&#x987F;&#x5B9A;&#x5F8B; (Wheaton&apos;s Law)</a></li>
+</ul>
+</li>
+<li><a href="#%e5%8e%9f%e5%88%99">&#x539F;&#x5219;</a><ul>
+<li><a href="#%e5%91%86%e4%bc%af%e7%89%b9%e6%b3%95%e5%88%99-the-dilbert-principle">&#x5446;&#x4F2F;&#x7279;&#x6CD5;&#x5219; (The Dilbert Principle)</a></li>
+<li><a href="#%e5%b8%95%e7%b4%af%e6%89%98%e6%b3%95%e5%88%99-the-pareto-principle-or-the-8020-rule">&#x5E15;&#x7D2F;&#x6258;&#x6CD5;&#x5219; (The Pareto Principle or The 80/20 Rule)</a></li>
+<li><a href="#%e5%bd%bc%e5%be%97%e5%8e%9f%e7%90%86-the-peter-principle">&#x5F7C;&#x5F97;&#x539F;&#x7406; (The Peter Principle)</a></li>
+<li><a href="#%e9%b2%81%e6%a3%92%e6%80%a7%e5%8e%9f%e5%88%99-the-robustness-principle-or-postels-law">&#x9C81;&#x68D2;&#x6027;&#x539F;&#x5219; (The Robustness Principle or Postel&apos;s Law)</a></li>
+<li><a href="#solid">SOLID</a></li>
+<li><a href="#%e5%8d%95%e4%b8%80%e5%8a%9f%e8%83%bd%e5%8e%9f%e5%88%99-the-single-responsibility-principle">&#x5355;&#x4E00;&#x529F;&#x80FD;&#x539F;&#x5219; (The Single Responsibility Principle)</a></li>
+<li><a href="#%e5%bc%80%e9%97%ad%e5%8e%9f%e5%88%99-the-openclosed-principle">&#x5F00;&#x95ED;&#x539F;&#x5219; (The Open/Closed Principle)</a></li>
+<li><a href="#%e9%87%8c%e6%b0%8f%e6%9b%bf%e6%8d%a2%e5%8e%9f%e5%88%99-the-liskov-substitution-principle">&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219; (The Liskov Substitution Principle)</a></li>
+<li><a href="#%e6%8e%a5%e5%8f%a3%e9%9a%94%e7%a6%bb%e5%8e%9f%e5%88%99-the-interface-segregation-principle">&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x539F;&#x5219; (The Interface Segregation Principle)</a></li>
+<li><a href="#%e4%be%9d%e8%b5%96%e5%8f%8d%e8%bd%ac%e5%8e%9f%e5%88%99-the-dependency-inversion-principle">&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;&#x539F;&#x5219; (The Dependency Inversion Principle)</a></li>
+<li><a href="#%e4%b8%8d%e8%a6%81%e9%87%8d%e5%a4%8d%e4%bd%a0%e8%87%aa%e5%b7%b1%e5%8e%9f%e5%88%99-the-dry-principle">&#x4E0D;&#x8981;&#x91CD;&#x590D;&#x4F60;&#x81EA;&#x5DF1;&#x539F;&#x5219; (The DRY Principle)</a></li>
+<li><a href="#kiss-%e5%8e%9f%e5%88%99-the-kiss-principle">KISS &#x539F;&#x5219; (The KISS Principle)</a></li>
+<li><a href="#%e4%bd%a0%e4%b8%8d%e9%9c%80%e8%a6%81%e5%ae%83%e5%8e%9f%e5%88%99-yagni">&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x5B83;&#x539F;&#x5219; (YAGNI)</a></li>
+<li><a href="#%e5%88%86%e5%b8%83%e5%bc%8f%e8%ae%a1%e7%ae%97%e7%9a%84%e8%b0%ac%e8%ae%ba-the-fallacies-of-distributed-computing">&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x7684;&#x8C2C;&#x8BBA; (The Fallacies of Distributed Computing)</a></li>
+</ul>
+</li>
+<li><a href="#%e9%98%85%e8%af%bb%e6%b8%85%e5%8d%95">&#x9605;&#x8BFB;&#x6E05;&#x5355;</a></li>
+<li><a href="#todo">TODO</a></li>
+<li><a href="#%e6%8b%9b%e8%81%98">&#x62DB;&#x8058;</a></li>
+</ul>
+<h2 id="&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</h2>
+<p>&#x5F53;&#x4EBA;&#x4EEC;&#x8C08;&#x8BBA;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x4F1A;&#x804A;&#x5230;&#x8BB8;&#x591A;&#x5B9A;&#x5F8B;&#x3002;&#x8FD9;&#x4E2A;&#x4ED3;&#x5E93;&#x6536;&#x5F55;&#x4E86;&#x4E00;&#x4E9B;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x5B9A;&#x5F8B;&#x3002;</p>
+<p>&#x2757;: &#x8FD9;&#x4E2A;&#x4ED3;&#x5E93;&#x5305;&#x542B;&#x5BF9;&#x4E00;&#x4E9B;&#x5B9A;&#x5F8B;&#x3001;&#x539F;&#x5219;&#x4EE5;&#x53CA;&#x6A21;&#x5F0F;&#x7684;&#x89E3;&#x91CA;&#xFF0C;&#x4F46;&#x4E0D;<strong>&#x63D0;&#x5021;</strong>&#x5176;&#x4E2D;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x3002; &#x5B83;&#x4EEC;&#x7684;&#x5E94;&#x7528;&#x59CB;&#x7EC8;&#x5B58;&#x5728;&#x7740;&#x4E89;&#x8BBA;&#xFF0C;&#x5E76;&#x4E14;&#x5F88;&#x5927;&#x7A0B;&#x5EA6;&#x4E0A;&#x53D6;&#x51B3;&#x4E8E;&#x4F60;&#x6B63;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#x3002;</p>
+<h2 id="&#x5B9A;&#x5F8B;">&#x5B9A;&#x5F8B;</h2>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;&#xFF01;</p>
+<h3 id="&#x963F;&#x59C6;&#x8FBE;&#x5C14;&#x5B9A;&#x5F8B;-amdahls-law">&#x963F;&#x59C6;&#x8FBE;&#x5C14;&#x5B9A;&#x5F8B; (Amdahl&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%98%BF%E5%A7%86%E8%BE%BE%E5%B0%94%E5%AE%9A%E5%BE%8B" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x963F;&#x59C6;&#x8FBE;&#x5C14;&#x5B9A;&#x5F8B;&#x662F;&#x4E00;&#x4E2A;&#x663E;&#x793A;&#x8BA1;&#x7B97;&#x4EFB;&#x52A1;<strong>&#x6F5C;&#x5728;&#x52A0;&#x901F;</strong>&#x80FD;&#x529B;&#x7684;&#x516C;&#x5F0F;&#x3002;&#x8FD9;&#x79CD;&#x80FD;&#x529B;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x5E76;&#x884C;&#x8BA1;&#x7B97;&#x4E2D;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x9884;&#x6D4B;&#x589E;&#x52A0;&#x5904;&#x7406;&#x5668;&#x6570;&#x91CF;&#x7684;&#x5B9E;&#x9645;&#x597D;&#x5904;&#xFF0C;&#x7136;&#x800C;&#x589E;&#x52A0;&#x5904;&#x7406;&#x5668;&#x6570;&#x91CF;&#x4F1A;&#x53D7;&#x5230;&#x7A0B;&#x5E8F;&#x5E76;&#x884C;&#x6027;&#x7684;&#x9650;&#x5236;&#x3002;</p>
+</blockquote>
+<p>&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;&#xFF1A;&#x5982;&#x679C;&#x7A0B;&#x5E8F;&#x7531;&#x4E24;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF0C;&#x90E8;&#x5206; A &#x5FC5;&#x987B;&#x7531;&#x5355;&#x4E2A;&#x5904;&#x7406;&#x5668;&#x6267;&#x884C;&#xFF0C;&#x90E8;&#x5206; B &#x53EF;&#x4EE5;&#x5E76;&#x884C;&#x8FD0;&#x884C;&#x3002;&#x90A3;&#x4E48;&#x5411;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x7CFB;&#x7EDF;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x5904;&#x7406;&#x5668;&#x53EA;&#x80FD;&#x83B7;&#x5F97;&#x6709;&#x9650;&#x7684;&#x597D;&#x5904;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x6781;&#x5927;&#x5730;&#x63D0;&#x5347;&#x90E8;&#x5206; B &#x7684;&#x8FD0;&#x884C;&#x901F;&#x5EA6;&#xFF0C;&#x4F46;&#x90E8;&#x5206; A &#x7684;&#x8FD0;&#x884C;&#x901F;&#x5EA6;&#x5C06;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;</p>
+<p>&#x4E0B;&#x56FE;&#x5C55;&#x793A;&#x4E86;&#x4E00;&#x4E9B;&#x8FD0;&#x884C;&#x901F;&#x5EA6;&#x7684;&#x63D0;&#x5347;&#x6F5C;&#x80FD;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<p><img src="images/amdahls_law.png" alt="&#x963F;&#x59C6;&#x8FBE;&#x5C14;&#x5B9A;&#x5F8B;"></p>
+<p><em>(&#x56FE;&#x7247;&#x6765;&#x6E90;: By Daniels220 at English Wikipedia, Creative Commons Attribution-Share Alike 3.0 Unported, <a href="https://en.wikipedia.org/wiki/File:AmdahlsLaw.svg" target="_blank">https://en.wikipedia.org/wiki/File:AmdahlsLaw.svg</a>)</em></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;50&#xFF05; &#x5E76;&#x884C;&#x5316;&#x7684;&#x7A0B;&#x5E8F;&#x5728;&#x4F7F;&#x7528;&#x5927;&#x4E8E; 10 &#x4E2A;&#x5904;&#x7406;&#x5355;&#x5143;&#x4E4B;&#x540E;&#x7684;&#x901F;&#x5EA6;&#x63D0;&#x5347;&#x6536;&#x6548;&#x751A;&#x5FAE;&#xFF0C;&#x800C; 95&#xFF05; &#x5E76;&#x884C;&#x5316;&#x7684;&#x7A0B;&#x5E8F;&#x5728;&#x4F7F;&#x7528;&#x8D85;&#x8FC7;&#x4E00;&#x5343;&#x4E2A;&#x5904;&#x7406;&#x5355;&#x5143;&#x4E4B;&#x540E;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x663E;&#x8457;&#x63D0;&#x5347;&#x901F;&#x5EA6;&#x3002;</p>
+<p>&#x968F;&#x7740;<a href="#%E6%91%A9%E5%B0%94%E5%AE%9A%E5%BE%8B-moores-law">&#x6469;&#x5C14;&#x5B9A;&#x5F8B;</a>&#x51CF;&#x6162;&#xFF0C;&#x5355;&#x4E2A;&#x5904;&#x7406;&#x5668;&#x7684;&#x901F;&#x5EA6;&#x589E;&#x52A0;&#x7F13;&#x6162;&#xFF0C;&#x5E76;&#x884C;&#x5316;&#x662F;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x7684;&#x5173;&#x952E;&#x3002;&#x56FE;&#x5F62;&#x7F16;&#x7A0B;&#x662F;&#x4E00;&#x4E2A;&#x6781;&#x597D;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x73B0;&#x4EE3;&#x7740;&#x8272;&#x5668;&#x53EF;&#x4EE5;&#x5E76;&#x884C;&#x6E32;&#x67D3;&#x5355;&#x4E2A;&#x50CF;&#x7D20;&#x6216;&#x7247;&#x6BB5;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x73B0;&#x4EE3;&#x663E;&#x5361;&#x901A;&#x5E38;&#x5177;&#x6709;&#x6570;&#x5343;&#x4E2A;&#x5904;&#x7406;&#x6838;&#x5FC3;&#xFF08;GPU &#x6216;&#x7740;&#x8272;&#x5668;&#x5355;&#x5143;&#xFF09;&#x7684;&#x539F;&#x56E0;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%E5%B8%83%E9%B2%81%E5%85%8B%E6%96%AF%E6%B3%95%E5%88%99-brookss-law">&#x5E03;&#x9C81;&#x514B;&#x65AF;&#x6CD5;&#x5219;</a></li>
+<li><a href="#%E6%91%A9%E5%B0%94%E5%AE%9A%E5%BE%8B-moores-law">&#x6469;&#x5C14;&#x5B9A;&#x5F8B;</a></li>
+</ul>
+<h3 id="&#x5E03;&#x9C81;&#x514B;&#x65AF;&#x6CD5;&#x5219;-brookss-law">&#x5E03;&#x9C81;&#x514B;&#x65AF;&#x6CD5;&#x5219; (Brooks&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.m.wikipedia.org/wiki/Brooks%27s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x540E;&#x671F;&#xFF0C;&#x6DFB;&#x52A0;&#x4EBA;&#x529B;&#x53EA;&#x4F1A;&#x4F7F;&#x9879;&#x76EE;&#x5F00;&#x53D1;&#x5F97;&#x66F4;&#x6162;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x4E2A;&#x5B9A;&#x5F8B;&#x8868;&#x660E;&#xFF0C;&#x5728;&#x8BB8;&#x591A;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BD5;&#x56FE;&#x901A;&#x8FC7;&#x589E;&#x52A0;&#x4EBA;&#x529B;&#x6765;&#x52A0;&#x901F;&#x5DF2;&#x5EF6;&#x671F;&#x9879;&#x76EE;&#x7684;&#x4EA4;&#x4ED8;&#xFF0C;&#x5C06;&#x4F1A;&#x4F7F;&#x9879;&#x76EE;&#x4EA4;&#x4ED8;&#x5F97;&#x66F4;&#x665A;&#x3002;&#x5E03;&#x9C81;&#x514B;&#x65AF;&#x4E5F;&#x660E;&#x767D;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x8FC7;&#x5EA6;&#x7B80;&#x5316;&#x3002;&#x4F46;&#x4E00;&#x822C;&#x7684;&#x8BBA;&#x636E;&#x662F;&#xFF0C;&#x65B0;&#x8D44;&#x6E90;&#x7684;&#x65F6;&#x95F4;&#x589E;&#x52A0;&#x548C;&#x901A;&#x4FE1;&#x5F00;&#x9500;&#xFF0C;&#x4F1A;&#x5728;&#x77ED;&#x671F;&#x5185;&#x4F7F;&#x5F00;&#x53D1;&#x901F;&#x5EA6;&#x51CF;&#x6162;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x8BB8;&#x591A;&#x4EFB;&#x52A1;&#x662F;&#x5BC6;&#x4E0D;&#x53EF;&#x5206;&#x7684;&#xFF0C;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4F7F;&#x66F4;&#x591A;&#x7684;&#x8D44;&#x6E90;&#x4E4B;&#x95F4;&#x80FD;&#x8F7B;&#x6613;&#x5206;&#x914D;&#xFF0C;&#x8FD9;&#x4E5F;&#x610F;&#x5473;&#x7740;&#x6F5C;&#x5728;&#x7684;&#x901F;&#x5EA6;&#x589E;&#x957F;&#x4E5F;&#x66F4;&#x4F4E;&#x3002;</p>
+<p>&#x8C1A;&#x8BED; <strong>&#x4E5D;&#x4E2A;&#x5973;&#x4EBA;&#x4E0D;&#x80FD;&#x5728;&#x4E00;&#x4E2A;&#x6708;&#x5185;&#x751F;&#x4E00;&#x4E2A;&#x5B69;&#x5B50;</strong> &#x4E0E;&#x5E03;&#x9C81;&#x514B;&#x65AF;&#x6CD5;&#x5219;&#x540C;&#x51FA;&#x4E00;&#x8F99;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x67D0;&#x4E9B;&#x4E0D;&#x53EF;&#x5206;&#x5272;&#x6216;&#x8005;&#x5E76;&#x884C;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x8FD9;&#x662F;<a href="#%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95">&#x300A;&#x4EBA;&#x6708;&#x795E;&#x8BDD;&#x300B;</a>&#x7684;&#x4E2D;&#x5FC3;&#x4E3B;&#x9898;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#todo">Death March</a></li>
+<li><a href="#%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95">&#x9605;&#x8BFB;&#x6E05;&#x5355;&#xFF1A;&#x300A;&#x4EBA;&#x6708;&#x795E;&#x8BDD;&#x300B;</a></li>
+</ul>
+<h3 id="&#x5EB7;&#x5A01;&#x5B9A;&#x5F8B;-conways-law">&#x5EB7;&#x5A01;&#x5B9A;&#x5F8B; (Conway&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Conway%27s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%BA%B7%E5%A8%81%E5%AE%9A%E5%BE%8B" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x5B9A;&#x5F8B;&#x8BF4;&#x660E;&#x4E86;&#x7CFB;&#x7EDF;&#x7684;&#x6280;&#x672F;&#x8FB9;&#x754C;&#x53EF;&#x4EE5;&#x53CD;&#x5E94;&#x4E00;&#x4E2A;&#x7EC4;&#x7EC7;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x5B83;&#x901A;&#x5E38;&#x4F1A;&#x5728;&#x6539;&#x8FDB;&#x7EC4;&#x7EC7;&#x65F6;&#x88AB;&#x63D0;&#x53CA;&#x3002;&#x5EB7;&#x5A01;&#x5B9A;&#x5F8B;&#x8868;&#x660E;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7EC4;&#x7EC7;&#x88AB;&#x5206;&#x6563;&#x6210;&#x8BB8;&#x591A;&#x5C0F;&#x800C;&#x65E0;&#x8054;&#x7CFB;&#x7684;&#x5355;&#x5143;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5F00;&#x53D1;&#x7684;&#x8F6F;&#x4EF6;&#x4E5F;&#x662F;&#x5C0F;&#x800C;&#x5206;&#x6563;&#x7684;&#x3002;&#x5982;&#x679C;&#x7EC4;&#x7EC7;&#x662F;&#x66F4;&#x591A;&#x5730;&#x56F4;&#x7ED5;&#x4EE5;&#x529F;&#x80FD;&#x6216;&#x670D;&#x52A1;&#x4E3A;&#x5BFC;&#x5411;&#x7684;<strong>&#x5782;&#x76F4;</strong>&#x7ED3;&#x6784;&#xFF0C;&#x90A3;&#x4E48;&#x8F6F;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E5F;&#x4F1A;&#x53CD;&#x6620;&#x8FD9;&#x4E00;&#x70B9;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#spotify-%E6%A8%A1%E5%9E%8B-the-spotify-model">The Spotify Model</a></li>
+</ul>
+<h3 id="&#x574E;&#x5B81;&#x6C49;&#x59C6;&#x5B9A;&#x5F8B;-cunninghams-law">&#x574E;&#x5B81;&#x6C49;&#x59C6;&#x5B9A;&#x5F8B; (Cunningham&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Ward_Cunningham#Cunningham&apos;s_Law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5728;&#x7F51;&#x7EDC;&#x4E0A;&#x60F3;&#x5F97;&#x5230;&#x6B63;&#x786E;&#x7B54;&#x6848;&#x7684;&#x6700;&#x597D;&#x65B9;&#x6CD5;&#x4E0D;&#x662F;&#x63D0;&#x95EE;&#x9898;&#xFF0C;&#x800C;&#x662F;&#x53D1;&#x5E03;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x7684;&#x7B54;&#x6848;&#x3002;</p>
+</blockquote>
+<p>&#x636E;&#x53F2;&#x8482;&#x82AC;&#xB7;&#x9EA6;&#x514B;&#x57FA;&#x8FEA;&#x8BF4;&#xFF0C;&#x6C83;&#x5FB7;&#xB7;&#x574E;&#x5B81;&#x6C49;&#x59C6;&#x65E9;&#x5728; 20 &#x4E16;&#x7EAA; 80 &#x5E74;&#x4EE3;&#x65E9;&#x671F;&#x7684;&#x65F6;&#x5019;&#x5EFA;&#x8BAE;&#x4ED6;&#xFF0C;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#x83B7;&#x5F97;&#x6B63;&#x786E;&#x7B54;&#x6848;&#x7684;&#x6700;&#x597D;&#x65B9;&#x6CD5;&#x4E0D;&#x662F;&#x63D0;&#x95EE;&#x9898;&#xFF0C;&#x800C;&#x662F;&#x53D1;&#x5E03;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x7684;&#x7B54;&#x6848;&#x3002;&#x9EA6;&#x514B;&#x57FA;&#x8FEA;&#x79F0;&#x8FD9;&#x4E3A;&#x574E;&#x5B81;&#x6C49;&#x59C6;&#x5B9A;&#x5F8B;&#xFF0C;&#x800C;&#x574E;&#x5B81;&#x6C49;&#x59C6;&#x4E0D;&#x4EE5;&#x4E3A;&#x7136;&#xFF0C;&#x5E76;&#x89C9;&#x5F97;&#x8FD9;&#x662F;&#x201C;&#x9519;&#x8BEF;&#x7684;&#x5F15;&#x7528;&#x201D;&#x3002;&#x6700;&#x521D;&#x8FD9;&#x6761;&#x5B9A;&#x5F8B;&#x53EA;&#x662F;&#x7528;&#x4E8E;&#x63CF;&#x8FF0; Usenet &#x4E0A;&#x7684;&#x793E;&#x4EA4;&#x884C;&#x4E3A;&#xFF0C;&#x4F46;&#x540E;&#x6765;&#x4E5F;&#x6E10;&#x6E10;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x7684;&#x5728;&#x7EBF;&#x793E;&#x533A;&#xFF08;&#x5982; Wikipedia&#x3001;Reddit&#x3001;Twitter&#x3001;Facebook &#x7B49;&#xFF09;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="https://xkcd.com/386/" target="_blank">XKCD 386: &quot;Duty Calls&quot;</a></li>
+</ul>
+<h3 id="&#x9093;&#x5DF4;&#x6570;&#x5B57;-dunbars-number">&#x9093;&#x5DF4;&#x6570;&#x5B57; (Dunbar&apos;s Number)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dunbar%27s_number" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<p>&#x9093;&#x5DF4;&#x6570;&#x5B57;&#x662F;&#x5BF9;&#x4E00;&#x4E2A;&#x4EBA;&#x80FD;&#x591F;&#x4FDD;&#x6301;&#x7A33;&#x5B9A;&#x793E;&#x4F1A;&#x5173;&#x7CFB;&#x7684;&#x4EBA;&#x6570;&#x7684;&#x8BA4;&#x77E5;&#x6781;&#x9650;&#x2014;&#x2014;&#x5728;&#x8FD9;&#x79CD;&#x5173;&#x7CFB;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x4EBA;&#x77E5;&#x9053;&#x6BCF;&#x4E2A;&#x4EBA;&#x662F;&#x8C01;&#xFF0C;&#x4E5F;&#x77E5;&#x9053;&#x6BCF;&#x4E2A;&#x4EBA;&#x4E0E;&#x5176;&#x4ED6;&#x4EBA;&#x7684;&#x5173;&#x7CFB;&#x5982;&#x4F55;&#x3002;&#x800C;&#x5BF9;&#x8FD9;&#x4E00;&#x6570;&#x5B57;&#x7684;&#x786E;&#x5207;&#x503C;&#x5219;&#x6709;&#x7740;&#x4E00;&#x4E9B;&#x4E0D;&#x540C;&#x610F;&#x89C1;&#x3002;&#x9093;&#x5DF4;&#x6307;&#x51FA;&#xFF0C;&#x4EBA;&#x4EC5;&#x80FD;&#x8F7B;&#x677E;&#x5730;&#x7EF4;&#x6301; 150 &#x4E2A;&#x7A33;&#x5B9A;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x5173;&#x7CFB;&#x5728;&#x4E00;&#x4E2A;&#x66F4;&#x793E;&#x4F1A;&#x5316;&#x7684;&#x80CC;&#x666F;&#x4E2D;&#xFF0C;&#x4FBF;&#x662F;&#x5F53;&#x4F60;&#x78B0;&#x5DE7;&#x5728;&#x9152;&#x5427;&#x91CC;&#x78B0;&#x5230;&#x8FD9;&#x4E9B;&#x4EBA;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x4E0D;&#x4F1A;&#x56E0;&#x4E3A;&#x52A0;&#x5165;&#x4ED6;&#x4EEC;&#x800C;&#x611F;&#x5230;&#x5C34;&#x5C2C;&#x3002;&#x9093;&#x5DF4;&#x6570;&#x5B57;&#x7684;&#x4F30;&#x8BA1;&#x503C;&#x4E00;&#x822C;&#x5728; 100 &#x81F3; 250 &#x4E4B;&#x95F4;&#x3002;</p>
+<p>&#x548C;&#x4EBA;&#x4E0E;&#x4EBA;&#x4E4B;&#x95F4;&#x7A33;&#x5B9A;&#x7684;&#x5173;&#x7CFB;&#x4E00;&#x6837;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4E0E;&#x4EE3;&#x7801;&#x5E93;&#x7684;&#x5173;&#x7CFB;&#x4E5F;&#x9700;&#x8981;&#x52AA;&#x529B;&#x7EF4;&#x62A4;&#x3002;&#x5F53;&#x9762;&#x5BF9;&#x5927;&#x578B;&#x3001;&#x590D;&#x6742;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x6216;&#x8BB8;&#x591A;&#x9879;&#x76EE;&#x7684;&#x5F52;&#x5C5E;&#x6743;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x4F9D;&#x8D56;&#x4E8E;&#x7EA6;&#x5B9A;&#x3001;&#x7B56;&#x7565;&#x548C;&#x5EFA;&#x6A21;&#x8FC7;&#x7A0B;&#x6765;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#x3002;&#x9093;&#x5DF4;&#x6570;&#x5B57;&#x4E0D;&#x4EC5;&#x5728;&#x529E;&#x516C;&#x5BA4;&#x89C4;&#x6A21;&#x7684;&#x6269;&#x5927;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x4E3E;&#x8DB3;&#x8F7B;&#x91CD;&#xFF0C;&#x800C;&#x4E14;&#x5728;&#x8BBE;&#x7F6E;&#x56E2;&#x961F;&#x5DE5;&#x4F5C;&#x8303;&#x56F4;&#xFF0C;&#x6216;&#x51B3;&#x5B9A;&#x7CFB;&#x7EDF;&#x4F55;&#x65F6;&#x5E94;&#x8BE5;&#x6CE8;&#x91CD;&#x4E8E;&#x8F85;&#x52A9;&#x5EFA;&#x6A21;&#x548C;&#x7EC4;&#x7EC7;&#x7BA1;&#x7406;&#x5F00;&#x9500;&#x81EA;&#x52A8;&#x5316;&#x7684;&#x5DE5;&#x5177;&#x65F6;&#xFF0C;&#x4E5F;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x3002;&#x5C06;&#x9093;&#x5DF4;&#x6570;&#x5B57;&#x653E;&#x5165;&#x5DE5;&#x7A0B;&#x5185;&#x5BB9;&#x4E2D;&#x8FDB;&#x884C;&#x7C7B;&#x6BD4;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x60A8;&#x80FD;&#x52A0;&#x5165;&#x5E76;&#x6709;&#x4FE1;&#x5FC3;&#x968F;&#x53EB;&#x968F;&#x5230;&#x8FDB;&#x884C;&#x8F6E;&#x6362;&#x7684;&#x9879;&#x76EE;&#x6570;(&#x4EA6;&#x6216;&#x662F;&#x5355;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x89C4;&#x8303;&#x5316;&#x590D;&#x6742;&#x6027;)&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%e5%ba%b7%e5%a8%81%e5%ae%9a%e5%be%8b-conways-law">&#x5EB7;&#x5A01;&#x5B9A;&#x5F8B;</a></li>
+</ul>
+<h3 id="&#x76D6;&#x5C14;&#x5B9A;&#x5F8B;-galls-law">&#x76D6;&#x5C14;&#x5B9A;&#x5F8B; (Gall&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/John_Gall_(author" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a>#Gall&apos;s_law&gt;)</li>
+</ul>
+<blockquote>
+<p>&#x4E00;&#x4E2A;&#x5207;&#x5B9E;&#x53EF;&#x884C;&#x7684;&#x590D;&#x6742;&#x7CFB;&#x7EDF;&#x52BF;&#x5FC5;&#x662F;&#x4ECE;&#x4E00;&#x4E2A;&#x5207;&#x5B9E;&#x53EF;&#x884C;&#x7684;&#x7B80;&#x5355;&#x7CFB;&#x7EDF;&#x53D1;&#x5C55;&#x800C;&#x6765;&#x7684;&#x3002;&#x4ECE;&#x5934;&#x5F00;&#x59CB;&#x8BBE;&#x8BA1;&#x7684;&#x590D;&#x6742;&#x7CFB;&#x7EDF;&#x6839;&#x672C;&#x4E0D;&#x5207;&#x5B9E;&#x53EF;&#x884C;&#xFF0C;&#x65E0;&#x6CD5;&#x4FEE;&#x4FEE;&#x8865;&#x8865;&#x8BA9;&#x5B83;&#x5207;&#x5B9E;&#x53EF;&#x884C;&#x3002;&#x4F60;&#x5FC5;&#x987B;&#x7531;&#x4E00;&#x4E2A;&#x5207;&#x5B9E;&#x53EF;&#x884C;&#x7684;&#x7B80;&#x5355;&#x7CFB;&#x7EDF;&#x91CD;&#x65B0;&#x5F00;&#x59CB;&#x3002;</p>
+<p><a href="https://en.wikipedia.org/wiki/John_Gall_(author" target="_blank">&#x7EA6;&#x7FF0;&#xB7;&#x76D6;&#x5C14;</a>&gt;) (John Gall)</p>
+</blockquote>
+<p>&#x76D6;&#x5C14;&#x5B9A;&#x5F8B;&#x8BF4;&#x660E;&#x4E86;&#x8BBE;&#x8BA1;&#x9AD8;&#x5EA6;&#x590D;&#x6742;&#x7684;&#x7CFB;&#x7EDF;&#x5F88;&#x53EF;&#x80FD;&#x4F1A;&#x5931;&#x8D25;&#x3002;&#x5B83;&#x4EEC;&#x5F88;&#x96BE;&#x4E00;&#x8E74;&#x800C;&#x5C31;&#xFF0C;&#x66F4;&#x591A;&#x662F;&#x4ECE;&#x7B80;&#x5355;&#x7684;&#x7CFB;&#x7EDF;&#x9010;&#x6E10;&#x6F14;&#x53D8;&#x800C;&#x6765;&#x3002;</p>
+<p>&#x6700;&#x5178;&#x578B;&#x7684;&#x4F8B;&#x5B50;&#x4FBF;&#x662F;&#x4E92;&#x8054;&#x7F51;&#x3002;&#x5982;&#x4ECA;&#x7684;&#x4E92;&#x8054;&#x7F51;&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x5EA6;&#x590D;&#x6742;&#x7684;&#x7CFB;&#x7EDF;&#xFF0C;&#x800C;&#x5B83;&#x6700;&#x65E9;&#x53EA;&#x662F;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x79CD;&#x5728;&#x5B66;&#x672F;&#x673A;&#x6784;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;&#x5185;&#x5BB9;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x4E92;&#x8054;&#x7F51;&#x6210;&#x529F;&#x5B9E;&#x73B0;&#x4E86;&#x6700;&#x521D;&#x7684;&#x76EE;&#x6807;&#xFF0C;&#x5E76;&#x4E14;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x4E0D;&#x65AD;&#x6F14;&#x5316;&#xFF0C;&#x6700;&#x7EC8;&#x6210;&#x5C31;&#x4E86;&#x5982;&#x4ECA;&#x7684;&#x590D;&#x6742;&#x7E41;&#x8363;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#kiss-%e5%8e%9f%e5%88%99-the-kiss-principle">KISS &#x539F;&#x5219; (&#x4FDD;&#x6301;&#x7B80;&#x5355;&#x548C;&#x76F4;&#x767D;)</a></li>
+</ul>
+<h3 id="&#x53E4;&#x5FB7;&#x54C8;&#x7279;&#x5B9A;&#x5F8B;-goodharts-law">&#x53E4;&#x5FB7;&#x54C8;&#x7279;&#x5B9A;&#x5F8B; (Goodhart&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Goodhart&apos;s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%BE%B7%E5%93%88%E7%89%B9%E5%AE%9A%E5%BE%8B" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5F53;&#x538B;&#x529B;&#x65BD;&#x4E8E;&#x5176;&#x4E0A;&#x4EE5;&#x8FDB;&#x884C;&#x63A7;&#x5236;&#x65F6;&#xFF0C;&#x4EFB;&#x4F55;&#x89C2;&#x6D4B;&#x5230;&#x7684;&#x7EDF;&#x8BA1;&#x6052;&#x6027;&#x90FD;&#x503E;&#x5411;&#x6D88;&#x6563;&#x3002;</p>
+<p><em>&#x67E5;&#x5C14;&#x65AF;&#xB7;&#x53E4;&#x5FB7;&#x54C8;&#x7279; (Charles Goodhart)</em></p>
+</blockquote>
+<p>&#x53E6;&#x89C1;&#xFF1A;</p>
+<blockquote>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x63AA;&#x65BD;&#x672C;&#x8EAB;&#x6210;&#x4E3A;&#x76EE;&#x6807;&#x65F6;&#xFF0C;&#x5B83;&#x5C31;&#x4E0D;&#x518D;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x7684;&#x63AA;&#x65BD;&#x3002;</p>
+<p><em>&#x739B;&#x4E3D;&#x83B2;&#xB7;&#x65AF;&#x7279;&#x62C9;&#x817E; (Marilyn Strathern)</em></p>
+</blockquote>
+<p>&#x6839;&#x636E;&#x8FD9;&#x4E00;&#x5B9A;&#x5F8B;&#xFF0C;&#x7531;&#x6D4B;&#x91CF;&#x9A71;&#x52A8;&#x7684;&#x4F18;&#x5316;&#x53CD;&#x800C;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x6D4B;&#x91CF;&#x7ED3;&#x679C;&#x672C;&#x8EAB;&#x7684;&#x8BF4;&#x670D;&#x529B;&#x4E0B;&#x964D;&#x3002;&#x76F2;&#x76EE;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x8FC7;&#x5EA6;&#x4E25;&#x683C;&#x7B5B;&#x9009;&#x7684;&#x65B9;&#x6CD5; (<a href="https://zh.wikipedia.org/wiki/%E9%97%9C%E9%8D%B5%E7%B8%BE%E6%95%88%E6%8C%87%E6%A8%99" target="_blank">KPIs</a>) &#x53EF;&#x80FD;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E9B;&#x4E0D;&#x826F;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x4EBA;&#x4EEC;&#x4F1A;&#x503E;&#x5411;&#x4E8E;&#x7528;&#x201C;&#x94BB;&#x7A7A;&#x5B50;&#x201D;&#x7684;&#x884C;&#x4E3A;&#x53BB;&#x505A;&#x5C40;&#x90E8;&#x4F18;&#x5316;&#xFF0C;&#x4ECE;&#x800C;&#x6EE1;&#x8DB3;&#x4E00;&#x4E9B;&#x7279;&#x5B9A;&#x7684;&#x5EA6;&#x91CF;&#x6807;&#x51C6;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x5728;&#x610F;&#x6574;&#x4F53;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<p>&#x73B0;&#x5B9E;&#x4E2D;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<ul>
+<li>Assert-free &#x6D4B;&#x8BD5;&#x53EF;&#x4EE5;&#x8FBE;&#x5230;&#x4EE3;&#x7801;&#x8986;&#x76D6;&#x7387;&#x7684;&#x9884;&#x671F;&#xFF0C;&#x4F46;&#x5EA6;&#x91CF;&#x7684;&#x76EE;&#x7684;&#x5E94;&#x8BE5;&#x662F;&#x521B;&#x9020;&#x7ECF;&#x8FC7;&#x826F;&#x597D;&#x6D4B;&#x8BD5;&#x7684;&#x8F6F;&#x4EF6;&#x3002;</li>
+<li>&#x7531; commits &#x7684;&#x884C;&#x6570;&#x6765;&#x8BC4;&#x4EF7;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7684;&#x8868;&#x73B0;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x4E86;&#x4E0D;&#x5408;&#x7406;&#x7684;&#x4EE3;&#x7801;&#x5E93;&#x6269;&#x589E;&#x3002;</li>
+</ul>
+<p>&#x53C2;&#x89C1;</p>
+<ul>
+<li><a href="https://coffeeandjunk.com/goodharts-campbells-law/" target="_blank">&#x53E4;&#x5FB7;&#x54C8;&#x7279;&#x5B9A;&#x5F8B;&#xFF1A;&#x9519;&#x8BEF;&#x7684;&#x6D4B;&#x91CF;&#x5982;&#x4F55;&#x5BFC;&#x81F4;&#x4E0D;&#x9053;&#x5FB7;&#x7684;&#x884C;&#x4E3A;</a></li>
+<li><a href="https://dilbert.com/strip/1995-11-13" target="_blank">&#x5446;&#x4F2F;&#x7279;&#x4E0E;&#x65E0; bug &#x8F6F;&#x4EF6;</a></li>
+</ul>
+<h3 id="&#x6C49;&#x9686;&#x7684;&#x5243;&#x5200;&#xFF08;hanlons-razor&#xFF09;">&#x6C49;&#x9686;&#x7684;&#x5243;&#x5200;&#xFF08;Hanlon&apos;s Razor&#xFF09;</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Hanlon%27s_razor" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%B1%89%E9%9A%86%E7%9A%84%E5%89%83%E5%88%80" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x80FD;&#x89E3;&#x91CA;&#x4E3A;&#x611A;&#x8822;&#x7684;&#xFF0C;&#x5C31;&#x4E0D;&#x8981;&#x89E3;&#x91CA;&#x4E3A;&#x6076;&#x610F;&#x7684;&#x3002;</p>
+<p><em>&#x7F57;&#x4F2F;&#x7279;&#xB7;&#x6C49;&#x9686; (Robert J. Hanlon)</em></p>
+</blockquote>
+<p>&#x8FD9;&#x4E00;&#x539F;&#x5219;&#x8868;&#x660E;&#xFF0C;&#x4E00;&#x4E2A;&#x884C;&#x4E3A;&#x6240;&#x4EA7;&#x751F;&#x7684;&#x6D88;&#x6781;&#x7ED3;&#x679C;&#x5E76;&#x4E0D;&#x662F;&#x6076;&#x610F;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x6D88;&#x6781;&#x7ED3;&#x679C;&#x66F4;&#x6709;&#x53EF;&#x80FD;&#x5F52;&#x548E;&#x4E8E;&#x8FD9;&#x4E9B;&#x6CA1;&#x6709;&#x5F97;&#x5230;&#x5145;&#x5206;&#x7406;&#x89E3;&#x7684;&#x884C;&#x52A8;&#x6216;&#x5F71;&#x54CD;&#x3002;</p>
+<h3 id="&#x4FAF;&#x4E16;&#x8FBE;&#x5B9A;&#x5F8B;-hofstadters-law">&#x4FAF;&#x4E16;&#x8FBE;&#x5B9A;&#x5F8B; (Hofstadter&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Hofstadter%27s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%BE%AF%E4%B8%96%E8%BE%BE%E5%AE%9A%E5%BE%8B" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5373;&#x4F7F;&#x8003;&#x8651;&#x5230;&#x4FAF;&#x4E16;&#x8FBE;&#x5B9A;&#x5F8B;&#xFF0C;&#x5B83;&#x4E5F;&#x603B;&#x662F;&#x6BD4;&#x4F60;&#x9884;&#x671F;&#x7684;&#x8981;&#x957F;&#x3002;</p>
+<p>&#x4FAF;&#x4E16;&#x8FBE; (Douglas Hofstadter)</p>
+</blockquote>
+<p>&#x5728;&#x4F30;&#x8BA1;&#x9700;&#x8981;&#x591A;&#x957F;&#x65F6;&#x95F4;&#x5F00;&#x53D1;&#x65F6;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x542C;&#x5230;&#x6B64;&#x5B9A;&#x5F8B;&#x3002;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4F3C;&#x4E4E;&#x6709;&#x8FD9;&#x6837;&#x4E00;&#x6761;&#x5B9A;&#x7406;&#xFF0C;&#x5373;&#x6211;&#x4EEC;&#x5F80;&#x5F80;&#x4E0D;&#x80FD;&#x51C6;&#x786E;&#x5730;&#x4F30;&#x8BA1;&#x9700;&#x8981;&#x591A;&#x957F;&#x65F6;&#x95F4;&#x624D;&#x80FD;&#x5B8C;&#x6210;&#x3002;</p>
+<p>&#x8BED;&#x51FA;<a href="#%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95">&#x300A;&#x54E5;&#x5FB7;&#x5C14;&#x3001;&#x827E;&#x820D;&#x5C14;&#x3001;&#x5DF4;&#x8D6B;&#xFF1A;&#x96C6;&#x5F02;&#x74A7;&#x4E4B;&#x5927;&#x6210;&#x300B;</a>&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95">&#x9605;&#x8BFB;&#x6E05;&#x5355;&#xFF1A;&#x300A;&#x54E5;&#x5FB7;&#x5C14;&#x3001;&#x827E;&#x820D;&#x5C14;&#x3001;&#x5DF4;&#x8D6B;&#xFF1A;&#x96C6;&#x5F02;&#x74A7;&#x4E4B;&#x5927;&#x6210;&#x300B;</a></li>
+</ul>
+<h3 id="&#x54C8;&#x4F2F;&#x7279;&#x5B9A;&#x5F8B;-hutbers-law">&#x54C8;&#x4F2F;&#x7279;&#x5B9A;&#x5F8B; (Hutber&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Hutber%27s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x6539;&#x5584;&#x5373;&#x6076;&#x5316;&#x3002;</p>
+<p><a href="https://en.wikipedia.org/wiki/Patrick_Hutber" target="_blank">&#x5E15;&#x7279;&#x91CC;&#x514B;&#xB7;&#x54C8;&#x4F2F;&#x7279;</a> (Patrick Hutber)</p>
+</blockquote>
+<p>&#x8FD9;&#x4E2A;&#x5B9A;&#x5F8B;&#x8BF4;&#x660E;&#x4E86;&#x5BF9;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x6539;&#x8FDB;&#x4F1A;&#x5BFC;&#x81F4;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x7684;&#x6076;&#x5316;&#xFF1B;&#x6216;&#x8005;&#x5B83;&#x4F1A;&#x5C06;&#x5176;&#x4ED6;&#x7684;&#x6076;&#x5316;&#x9690;&#x85CF;&#x8D77;&#x6765;&#xFF0C;&#x5E76;&#x5BFC;&#x81F4;&#x7CFB;&#x7EDF;&#x6574;&#x4F53;&#x72B6;&#x6001;&#x7684;&#x9000;&#x5316;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x67D0;&#x4E2A;&#x7AEF;&#x70B9;&#x7684;&#x54CD;&#x5E94;&#x5EF6;&#x8FDF;&#x51CF;&#x5C11;&#xFF0C;&#x5C31;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x8BF7;&#x6C42;&#x6D41;&#x4E2D;&#x7684;&#x541E;&#x5410;&#x91CF;&#x548C;&#x5BB9;&#x91CF;&#x95EE;&#x9898;&#x8FDB;&#x4E00;&#x6B65;&#x589E;&#x52A0;&#xFF0C;&#x5E76;&#x5F71;&#x54CD;&#x5230;&#x53E6;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x5B50;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h3 id="&#x6280;&#x672F;&#x6210;&#x719F;&#x5EA6;&#x66F2;&#x7EBF;-the-hype-cycle--amaras-law">&#x6280;&#x672F;&#x6210;&#x719F;&#x5EA6;&#x66F2;&#x7EBF; (The Hype Cycle &amp; Amara&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Hype_cycle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%8A%80%E6%9C%AF%E6%88%90%E7%86%9F%E5%BA%A6%E6%9B%B2%E7%BA%BF" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x6211;&#x4EEC;&#x503E;&#x5411;&#x4E8E;&#x8FC7;&#x9AD8;&#x4F30;&#x8BA1;&#x6280;&#x672F;&#x5728;&#x77ED;&#x671F;&#x5185;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5E76;&#x4F4E;&#x4F30;&#x957F;&#x671F;&#x6548;&#x5E94;&#x3002;</p>
+<p><em>&#x7F57;&#x4F0A;&#xB7;&#x963F;&#x9A6C;&#x62C9; (Roy Amara)</em></p>
+</blockquote>
+<p>&#x6280;&#x672F;&#x6210;&#x719F;&#x5EA6;&#x66F2;&#x7EBF;&#x662F;<a href="https://zh.wikipedia.org/wiki/%E9%AB%98%E5%BE%B7%E7%BA%B3%E5%92%A8%E8%AF%A2%E5%85%AC%E5%8F%B8" target="_blank">&#x9AD8;&#x5FB7;&#x7EB3;&#x54A8;&#x8BE2;&#x516C;&#x53F8;</a>&#x5BF9;&#x6280;&#x672F;&#x6700;&#x521D;&#x5174;&#x8D77;&#x548C;&#x53D1;&#x5C55;&#x7684;&#x89C6;&#x89C9;&#x5C55;&#x73B0;&#x3002;&#x4E00;&#x56FE;&#x9876;&#x5343;&#x8A00;&#xFF1A;</p>
+<p><img src="images/gartner_hype_cycle.png" alt="The Hype Cycle"></p>
+<p><em>(&#x56FE;&#x7247;&#x6765;&#x6E90;: By Jeremykemp at English Wikipedia, CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=10547051" target="_blank">https://commons.wikimedia.org/w/index.php?curid=10547051</a>)</em></p>
+<p>&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x8FD9;&#x4E2A;&#x5468;&#x671F;&#x8868;&#x660E;&#xFF0C;&#x65B0;&#x6280;&#x672F;&#x53CA;&#x5176;&#x6F5C;&#x5728;&#x5F71;&#x54CD;&#x901A;&#x5E38;&#x4F1A;&#x5F15;&#x53D1;&#x4E00;&#x9635;&#x6D6A;&#x6F6E;&#x3002;&#x56E2;&#x961F;&#x5FEB;&#x901F;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x65B0;&#x6280;&#x672F;&#xFF0C;&#x6709;&#x65F6;&#x4F1A;&#x5BF9;&#x7ED3;&#x679C;&#x611F;&#x5230;&#x5931;&#x671B;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x56E0;&#x4E3A;&#x8BE5;&#x6280;&#x672F;&#x8FD8;&#x4E0D;&#x591F;&#x6210;&#x719F;&#xFF0C;&#x6216;&#x8005;&#x73B0;&#x5B9E;&#x5E94;&#x7528;&#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x5168;&#x5B9E;&#x73B0;&#x3002;&#x7ECF;&#x8FC7;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x540E;&#xFF0C;&#x6280;&#x672F;&#x7684;&#x80FD;&#x529B;&#x63D0;&#x9AD8;&#x4E86;&#xFF0C;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x5B9E;&#x9645;&#x673A;&#x4F1A;&#x4F1A;&#x589E;&#x52A0;&#xFF0C;&#x6700;&#x7EC8;&#x56E2;&#x961F;&#x4E5F;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x5DE5;&#x4F5C;&#x6548;&#x7387;&#x3002;&#x7F57;&#x4F0A;&#xB7;&#x963F;&#x9A6C;&#x62C9;&#x7B80;&#x6D01;&#x5730;&#x603B;&#x7ED3;&#x4E86;&#x8FD9;&#x4E00;&#x70B9;&#xFF1A;&#x6211;&#x4EEC;&#x503E;&#x5411;&#x4E8E;&#x9AD8;&#x4F30;&#x6280;&#x672F;&#x77ED;&#x671F;&#x5185;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x5E76;&#x4F4E;&#x4F30;&#x957F;&#x671F;&#x6548;&#x5E94;&#x3002;</p>
+<h3 id="&#x9690;&#x5F0F;&#x63A5;&#x53E3;&#x5B9A;&#x5F8B;-hyrums-law-or-the-law-of-implicit-interfaces">&#x9690;&#x5F0F;&#x63A5;&#x53E3;&#x5B9A;&#x5F8B; (Hyrum&apos;s Law or The Law of Implicit Interfaces)</h3>
+<ul>
+<li><a href="http://www.hyrumslaw.com/" target="_blank">&#x82F1;&#x6587;&#x5728;&#x7EBF;&#x5730;&#x5740;</a></li>
+</ul>
+<blockquote>
+<p>&#x5F53; API &#x6709;&#x8DB3;&#x591F;&#x591A;&#x7684;&#x7528;&#x6237;&#x65F6;&#xFF0C;&#x4F60;&#x5728;&#x5408;&#x540C;&#x4E2D;&#x7684;&#x627F;&#x8BFA;&#x5DF2;&#x4E0D;&#x91CD;&#x8981;&#xFF1A;&#x4F60;&#x7CFB;&#x7EDF;&#x7684;&#x6240;&#x6709;&#x53EF;&#x89C2;&#x5BDF;&#x884C;&#x4E3A;&#x90FD;&#x5C06;&#x88AB;&#x67D0;&#x4E9B;&#x4EBA;&#x6240;&#x4F9D;&#x8D56;&#x3002;</p>
+<p><em>&#x6D77;&#x4F26;&#xB7;&#x8D56;&#x7279;&#xFF08;Hyrum Wright&#xFF09;</em></p>
+</blockquote>
+<p>&#x9690;&#x5F0F;&#x63A5;&#x53E3;&#x5B9A;&#x5F8B;&#x8868;&#x660E;&#xFF0C;&#x5F53;&#x4F60;&#x7684; API &#x6709;&#x8DB3;&#x591F;&#x591A;&#x7684;&#x7528;&#x6237;&#x65F6;&#xFF0C;API &#x7684;&#x6240;&#x6709;&#x884C;&#x4E3A;&#xFF08;&#x5305;&#x62EC;&#x90A3;&#x4E9B;&#x672A;&#x56CA;&#x62EC;&#x5728;&#x516C;&#x5171;&#x8BF4;&#x660E;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF09;&#x6700;&#x7EC8;&#x90FD;&#x4F1A;&#x88AB;&#x5176;&#x4ED6;&#x4EBA;&#x6240;&#x4F9D;&#x8D56;&#x3002; &#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x662F; API &#x7684;&#x54CD;&#x5E94;&#x65F6;&#x95F4;&#x8FD9;&#x79CD;&#x975E;&#x529F;&#x80FD;&#x6027;&#x56E0;&#x7D20;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x66F4;&#x5FAE;&#x5999;&#x7684;&#x4F8B;&#x5B50;&#x662F;&#xFF1A;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5224;&#x65AD;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x7684;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x5373;&#x4F7F; API &#x7684;&#x516C;&#x5171;&#x8BF4;&#x660E;&#x6CA1;&#x6709;&#x8BF4;&#x660E;&#x6D88;&#x606F;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6765;&#x6307;&#x793A;&#x7528;&#x6237;&#x9519;&#x8BEF;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4E00;&#x4E9B;&#x7528;&#x6237;&#x4E5F;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x7528;&#x5E76;&#x66F4;&#x6539;&#x8BE5;&#x6D88;&#x606F;&#xFF0C;&#x800C;&#x8FD9;&#x5B9E;&#x9645;&#x4E0A;&#x4F1A;&#x7834;&#x574F; API &#x7684;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%E6%BC%8F%E6%B4%9E%E6%8A%BD%E8%B1%A1%E5%AE%9A%E5%BE%8B-the-law-of-leaky-abstractions">&#x62BD;&#x8C61;&#x6CC4;&#x6F0F;&#x5B9A;&#x5F8B;</a></li>
+<li><a href="https://xkcd.com/1172/" target="_blank">XKCD 1172</a></li>
+</ul>
+<h3 id="&#x6885;&#x7279;&#x5361;&#x592B;&#x5B9A;&#x5F8B;-metcalfes-law">&#x6885;&#x7279;&#x5361;&#x592B;&#x5B9A;&#x5F8B; (Metcalfe&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Metcalfe&apos;s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%A2%85%E7%89%B9%E5%8D%A1%E5%A4%AB%E5%AE%9A%E5%BE%8B" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5728;&#x7F51;&#x7EDC;&#x7406;&#x8BBA;&#x4E2D;&#xFF0C;&#x7CFB;&#x7EDF;&#x7684;&#x4EF7;&#x503C;&#x7EA6;&#x7B49;&#x4E8E;&#x7CFB;&#x7EDF;&#x7528;&#x6237;&#x6570;&#x7684;&#x5E73;&#x65B9;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x4E2A;&#x5B9A;&#x5F8B;&#x57FA;&#x4E8E;&#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x4E2D;&#x53EF;&#x80FD;&#x7684;&#x8FDE;&#x63A5;&#x5BF9;&#x6570;&#x91CF;&#xFF0C;&#x5E76;&#x4E14;&#x4E0E;<a href="#%e9%87%8c%e5%be%b7%e5%ae%9a%e5%be%8b-reeds-law">&#x91CC;&#x5FB7;&#x5B9A;&#x5F8B;</a>&#x5341;&#x5206;&#x76F8;&#x8FD1;&#x3002;&#x5965;&#x5FB7;&#x5229;&#x5179;&#x79D1; (Odlyzko) &#x548C;&#x5176;&#x4ED6;&#x4EBA;&#x8BA4;&#x4E3A;&#xFF0C;&#x91CC;&#x5FB7;&#x5B9A;&#x5F8B;&#x548C;&#x6885;&#x7279;&#x5361;&#x592B;&#x5B9A;&#x5F8B;&#x5938;&#x5927;&#x4E86;&#x7CFB;&#x7EDF;&#x672C;&#x8EAB;&#x7684;&#x4EF7;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x6CA1;&#x6709;&#x8003;&#x8651;&#x5230;&#x7F51;&#x7EDC;&#x6548;&#x5E94;&#x4E2D;&#x4EBA;&#x7C7B;&#x8BA4;&#x77E5;&#x7684;&#x9650;&#x5236;&#x3002;</p>
+<p>&#x53C2;&#x89C1;:</p>
+<ul>
+<li><a href="#%e9%87%8c%e5%be%b7%e5%ae%9a%e5%be%8b-reeds-law">&#x91CC;&#x5FB7;&#x5B9A;&#x5F8B;</a></li>
+<li><a href="#%e9%82%93%e5%b7%b4%e6%95%b0%e5%ad%97-dunbars-number">&#x9093;&#x5DF4;&#x6570;&#x5B57;</a></li>
+</ul>
+<h3 id="&#x6469;&#x5C14;&#x5B9A;&#x5F8B;-moores-law">&#x6469;&#x5C14;&#x5B9A;&#x5F8B; (Moore&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%91%A9%E5%B0%94%E5%AE%9A%E5%BE%8B" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x96C6;&#x6210;&#x7535;&#x8DEF;&#x4E2D;&#x7684;&#x6676;&#x4F53;&#x7BA1;&#x6570;&#x91CF;&#x5927;&#x7EA6;&#x6BCF;&#x4E24;&#x5E74;&#x7FFB;&#x4E00;&#x756A;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x6761;&#x5B9A;&#x5F8B;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x8BF4;&#x660E;&#x534A;&#x5BFC;&#x4F53;&#x548C;&#x82AF;&#x7247;&#x6280;&#x672F;&#x63D0;&#x9AD8;&#x7684;&#x7EDD;&#x5BF9;&#x901F;&#x5EA6;&#x3002;&#x4ECE; 20 &#x4E16;&#x7EAA; 70 &#x5E74;&#x4EE3;&#x5230; 21 &#x4E16;&#x7EAA;&#x524D;&#x5341;&#x5E74;&#xFF0C;&#x6469;&#x5C14;&#x7684;&#x9884;&#x6D4B;&#x88AB;&#x8BC1;&#x660E;&#x662F;&#x9AD8;&#x5EA6;&#x51C6;&#x786E;&#x7684;&#x3002; &#x8FD1;&#x5E74;&#x6765;&#xFF0C;&#x8FD9;&#x79CD;&#x8D8B;&#x52BF;&#x7565;&#x6709;&#x53D8;&#x5316;&#xFF0C;&#x90E8;&#x5206;&#x539F;&#x56E0;&#x53D7;&#x5230;<a href="https://zh.wikipedia.org/wiki/%E9%87%8F%E5%AD%90%E7%A9%BF%E9%9A%A7%E6%95%88%E6%87%89" target="_blank">&#x91CF;&#x5B50;&#x96A7;&#x7A7F;&#x6548;&#x5E94;</a>&#x5F71;&#x54CD;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5E76;&#x884C;&#x5316;&#x8BA1;&#x7B97;&#x7684;&#x8FDB;&#x6B65;&#x4EE5;&#x53CA;&#x534A;&#x5BFC;&#x4F53;&#x6280;&#x672F;&#x548C;&#x91CF;&#x5B50;&#x8BA1;&#x7B97;&#x6F5C;&#x5728;&#x7684;&#x9769;&#x547D;&#x6027;&#x53D8;&#x5316;&#xFF0C;&#x53EF;&#x80FD;&#x610F;&#x5473;&#x7740;&#x6469;&#x5C14;&#x5B9A;&#x5F8B;&#x5728;&#x672A;&#x6765;&#x51E0;&#x5341;&#x5E74;&#x5185;&#x7EE7;&#x7EED;&#x4FDD;&#x6301;&#x6B63;&#x786E;&#x3002;</p>
+<h3 id="&#x58A8;&#x83F2;&#x5B9A;&#x5F8B;-murphys-law--sods-law">&#x58A8;&#x83F2;&#x5B9A;&#x5F8B; (Murphy&apos;s Law / Sod&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Murphy%27s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%91%A9%E8%8F%B2%E5%AE%9A%E7%90%86" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x51E1;&#x662F;&#x53EF;&#x80FD;&#x51FA;&#x9519;&#x7684;&#x4E8B;&#x5C31;&#x4E00;&#x5B9A;&#x4F1A;&#x51FA;&#x9519;&#x3002;</p>
+</blockquote>
+<p>&#x51FA;&#x81EA; <a href="https://en.wikipedia.org/wiki/Edward_A._Murphy_Jr." target="_blank">&#x7231;&#x5FB7;&#x534E;&#xB7;A&#xB7;&#x58A8;&#x83F2;</a> &#xFF0C; <em>&#x58A8;&#x83F2;&#x5B9A;&#x5F8B;</em> &#x8BF4;&#x660E;&#x4E86;&#x5982;&#x679C;&#x4E00;&#x4EF6;&#x4E8B;&#x6709;&#x53EF;&#x80FD;&#x51FA;&#x9519;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4E00;&#x5B9A;&#x4F1A;&#x51FA;&#x9519;&#x3002;</p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x53E5;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x95F4;&#x7684;&#x4FD7;&#x8BED;&#xFF0C;&#x5728;&#x5F00;&#x53D1;&#x3001;&#x6D4B;&#x8BD5;&#x751A;&#x81F3;&#x5728;&#x751F;&#x4EA7;&#x4E2D;&#x90FD;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x4E00;&#x4E9B;&#x4EE4;&#x4EBA;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x800C;&#x8FD9;&#x4E00;&#x5B9A;&#x5F8B;&#x4E5F;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5728;&#x82F1;&#x5F0F;&#x82F1;&#x8BED;&#x4E2D;&#x66F4;&#x4E3A;&#x5E38;&#x89C1;&#x7684; <em>&#x7D22;&#x5FB7;&#x5B9A;&#x7406;</em> &#xFF1A;</p>
+<blockquote>
+<p>&#x5982;&#x679C;&#x67D0;&#x4EF6;&#x4E8B;&#x53EF;&#x80FD;&#x51FA;&#x9519;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4E00;&#x5B9A;&#x4F1A;&#x5728;&#x6700;&#x7CDF;&#x7CD5;&#x7684;&#x65F6;&#x5019;&#x53D1;&#x751F;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x4E9B;&#x5B9A;&#x5F8B;&#x5E38;&#x5E38;&#x7528;&#x4E8E;&#x5E7D;&#x9ED8;&#x5632;&#x5F04;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E; <a href="#TODO"><em>Confirmation Bias</em></a> &#x548C; <a href="#TODO"><em>Selection Bias</em></a> &#x7684;&#x73B0;&#x8C61;&#x5F88;&#x5BB9;&#x6613;&#x5BFC;&#x81F4;&#x4EBA;&#x4EEC;&#x8FC7;&#x5206;&#x5F3A;&#x8C03;&#x8FD9;&#x4E9B;&#x5B9A;&#x5F8B;&#xFF08;&#x5373;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E00;&#x4EF6;&#x4E8B;&#x7684;&#x6210;&#x529F;&#x4F1A;&#x663E;&#x5F97;&#x53F8;&#x7A7A;&#x89C1;&#x60EF;&#xFF1B;&#x800C;&#x5931;&#x8D25;&#x624D;&#x4F1A;&#x5F15;&#x8D77;&#x66F4;&#x591A;&#x7684;&#x6CE8;&#x610F;&#x548C;&#x8BA8;&#x8BBA;&#xFF09;&#x3002;</p>
+<p>&#x53C2;&#x89C1;:</p>
+<ul>
+<li><a href="#TODO">Confirmation Bias</a></li>
+<li><a href="#TODO">Selection Bias</a></li>
+</ul>
+<h3 id="&#x5E15;&#x91D1;&#x68EE;&#x5B9A;&#x7406;-parkinsons-law">&#x5E15;&#x91D1;&#x68EE;&#x5B9A;&#x7406; (Parkinson&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Parkinson%27s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%B8%95%E9%87%91%E6%A3%AE%E5%AE%9A%E7%90%86" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5728;&#x5DE5;&#x4F5C;&#x80FD;&#x591F;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x9650;&#x5185;&#xFF0C;&#x5DE5;&#x4F5C;&#x91CF;&#x4F1A;&#x4E00;&#x76F4;&#x589E;&#x52A0;&#xFF0C;&#x76F4;&#x5230;&#x6240;&#x6709;&#x53EF;&#x7528;&#x65F6;&#x95F4;&#x90FD;&#x88AB;&#x586B;&#x6EE1;&#x4E3A;&#x6B62;&#x3002;</p>
+</blockquote>
+<p>&#x57FA;&#x4E8E;&#x5B98;&#x50DA;&#x673A;&#x6784;&#x7684;&#x7814;&#x7A76;&#x80CC;&#x666F;&#xFF0C;&#x8BE5;&#x5B9A;&#x5F8B;&#x88AB;&#x5E94;&#x7528;&#x4E8E;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x3002;&#x8BE5;&#x7406;&#x8BBA;&#x8BA4;&#x4E3A;&#xFF0C;&#x56E2;&#x961F;&#x5728;&#x622A;&#x6B62;&#x65E5;&#x671F;&#x4E4B;&#x524D;&#x6548;&#x7387;&#x4F4E;&#x4E0B;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x622A;&#x6B62;&#x65E5;&#x671F;&#x524D;&#x8D76;&#x7D27;&#x5B8C;&#x6210;&#x5DE5;&#x4F5C;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x5B9E;&#x9645;&#x622A;&#x6B62;&#x65E5;&#x671F;&#x53D8;&#x5F97;&#x968F;&#x610F;&#x3002;</p>
+<p>&#x5C06;&#x8FD9;&#x4E2A;&#x5B9A;&#x7406;&#x4E0E;<a href="#%E4%BE%AF%E4%B8%96%E8%BE%BE%E5%AE%9A%E5%BE%8B-hofstadters-law">&#x4FAF;&#x4E16;&#x8FBE;&#x5B9A;&#x5F8B;</a>&#x76F8;&#x7ED3;&#x5408;&#xFF0C;&#x5219;&#x4F1A;&#x83B7;&#x5F97;&#x66F4;&#x52A0;&#x60B2;&#x89C2;&#x7684;&#x89C2;&#x70B9;&#xFF1A;&#x4E3A;&#x4E86;&#x5728;&#x89C4;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#x5B8C;&#x6210;&#x5DE5;&#x4F5C;&#xFF0C;&#x5DE5;&#x4F5C;&#x5C06;&#x589E;&#x591A;&#xFF0C;&#x82B1;&#x8D39;&#x6BD4;&#x9884;&#x671F;&#x66F4;&#x957F;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%E4%BE%AF%E4%B8%96%E8%BE%BE%E5%AE%9A%E5%BE%8B-hofstadters-law">&#x4FAF;&#x4E16;&#x8FBE;&#x5B9A;&#x5F8B;</a></li>
+</ul>
+<h3 id="&#x8FC7;&#x65E9;&#x4F18;&#x5316;&#x6548;&#x5E94;-premature-optimization-effect">&#x8FC7;&#x65E9;&#x4F18;&#x5316;&#x6548;&#x5E94; (Premature Optimization Effect)</h3>
+<ul>
+<li><a href="http://wiki.c2.com/?PrematureOptimization" target="_blank">&#x82F1;&#x6587;&#x5728;&#x7EBF;&#x7F51;&#x7AD9;</a></li>
+</ul>
+<blockquote>
+<p>&#x8FC7;&#x65E9;&#x4F18;&#x5316;&#x662F;&#x4E07;&#x6076;&#x4E4B;&#x6E90;&#x3002;</p>
+<p><a href="https://twitter.com/realdonaldknuth?lang=en" target="_blank">&#x9AD8;&#x5FB7;&#x7EB3; (&#x5510;&#x7EB3;&#x5FB7;&#x514B;&#x52AA;&#x7279;&#x7684;&#x4E2D;&#x6587;&#x540D;)</a></p>
+</blockquote>
+<p>&#x5728;&#x9AD8;&#x5FB7;&#x7EB3;&#x7684;<a href="http://wiki.c2.com/?StructuredProgrammingWithGoToStatements" target="_blank">&#x300A;goto &#x8BED;&#x53E5;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x7F16;&#x7A0B;&#x300B;</a>&#x8BBA;&#x6587;&#x4E2D;&#xFF0C;&#x4ED6;&#x5199;&#x5230;&#xFF1A;&#x201C;&#x7A0B;&#x5E8F;&#x5458;&#x4EEC;&#x6D6A;&#x8D39;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x65F6;&#x95F4;&#x53BB;&#x601D;&#x8003;&#x6216;&#x8005;&#x62C5;&#x5FC3;&#x4ED6;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x975E;&#x5173;&#x952E;&#x90E8;&#x5206;&#x7684;&#x901F;&#x5EA6;&#x3002;&#x800C;&#x5728;&#x8003;&#x8651;&#x8C03;&#x8BD5;&#x548C;&#x7EF4;&#x62A4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E9B;&#x6240;&#x8C13;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#x7684;&#x505A;&#x6CD5;&#x5B9E;&#x9645;&#x4E0A;&#x5341;&#x5206;&#x4E0D;&#x59A5;&#x3002;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x653E;&#x5F03;&#x5C0F;&#x7684;&#x6548;&#x7387;&#x70B9;&#xFF0C;&#x5E76;&#x4E14;&#x8981;&#x5728; 97% &#x7684;&#x65F6;&#x95F4;&#x63D0;&#x9192;&#x81EA;&#x5DF1;&#xFF0C;<strong>&#x8FC7;&#x65E9;&#x4F18;&#x5316;&#x662F;&#x4E07;&#x6076;&#x4E4B;&#x6E90;</strong>&#x3002;&#x800C;&#x4E14;&#x8FDE;&#x90A3;&#x5173;&#x952E;&#x7684; 3% &#x4E5F;&#x4E0D;&#x80FD;&#x591F;&#x653E;&#x8FC7;&#x3002;&#x201D;</p>
+<p>&#x7136;&#x800C;&#xFF0C;<em>&#x8FC7;&#x65E9;&#x4F18;&#x5316;</em> &#xFF08;&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF09;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x4E3A;&#x5728;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x9700;&#x8981;&#x505A;&#x4EC0;&#x4E48;&#x4E4B;&#x524D;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#x3002;</p>
+<h3 id="&#x666E;&#x7279;&#x5B9A;&#x5F8B;-putts-law">&#x666E;&#x7279;&#x5B9A;&#x5F8B; (Putt&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Putt%27s_Law_and_the_Successful_Technocrat" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x6280;&#x672F;&#x7531;&#x4E24;&#x7C7B;&#x4EBA;&#x4E3B;&#x5BFC;&#xFF0C;&#x4E00;&#x7C7B;&#x662F;&#x7EAF;&#x7CB9;&#x7684;&#x7BA1;&#x7406;&#x4EBA;&#x5458;&#xFF0C; &#x4E00;&#x7C7B;&#x662F;&#x7EAF;&#x7CB9;&#x7684;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x3002;</p>
+</blockquote>
+<p>&#x666E;&#x7279;&#x5B9A;&#x5F8B;&#x5E38;&#x5E38;&#x9075;&#x5FAA;&#x666E;&#x7279;&#x63A8;&#x8BBA;&#xFF1A;</p>
+<blockquote>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x6280;&#x672F;&#x5C42;&#x6B21;&#xFF0C;&#x5047;&#x4EE5;&#x65F6;&#x65E5;&#xFF0C;&#x80FD;&#x529B;&#x5C06;&#x9006;&#x8F6C;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x4E9B;&#x7ED3;&#x8BBA;&#x8868;&#x660E;&#xFF0C;&#x7531;&#x4E8E;&#x5404;&#x79CD;&#x9009;&#x62E9;&#x6807;&#x51C6;&#x548C;&#x7FA4;&#x4F53;&#x7EC4;&#x7EC7;&#x7684;&#x8D8B;&#x52BF;&#xFF0C;&#x6280;&#x672F;&#x7EC4;&#x7EC7;&#x7684;&#x5DE5;&#x4F5C;&#x5C42;&#x9762;&#x5C06;&#x6709;&#x4E00;&#x4E9B;&#x6280;&#x672F;&#x4EBA;&#x5458;&#xFF0C;&#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x4E0D;&#x4E86;&#x89E3;&#x590D;&#x6742;&#x6027;&#x548C;&#x6311;&#x6218;&#x7684;&#x7BA1;&#x7406;&#x4EBA;&#x5458;&#x3002;&#x8FD9;&#x79CD;&#x73B0;&#x8C61;&#x53EF;&#x80FD;&#x662F;&#x7531;&#x4E8E; <a href="#TODO">The Peter Principe</a> &#x6216; <a href="#TODO">Dilbert&apos;s Law</a> &#x9020;&#x6210;&#x7684;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5E94;&#x8BE5;&#x5F3A;&#x8C03;&#x7684;&#x662F;&#xFF0C;&#x8BF8;&#x5982;&#x6B64;&#x7C7B;&#x7684;&#x5B9A;&#x5F8B;&#x662F;&#x4E00;&#x79CD;&#x5E7F;&#x6CDB;&#x7684;&#x6982;&#x62EC;&#xFF0C;&#x53EF;&#x80FD;&#x9002;&#x7528;&#x4E8E;&#x67D0;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x7EC4;&#x7EC7;&#xFF0C;&#x800C;&#x4E0D;&#x9002;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x7EC4;&#x7EC7;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#TODO">The Peter Principe</a></li>
+<li><a href="#TODO">Dilbert&apos;s Law</a>.</li>
+</ul>
+<h3 id="&#x91CC;&#x5FB7;&#x5B9A;&#x5F8B;-reeds-law">&#x91CC;&#x5FB7;&#x5B9A;&#x5F8B; (Reed&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Reed&apos;s_law" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5927;&#x578B;&#x7F51;&#x7EDC;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x793E;&#x4EA4;&#x7F51;&#x7EDC;&#x7684;&#x6548;&#x7528;&#x4F1A;&#x968F;&#x7740;&#x7F51;&#x7EDC;&#x7684;&#x5927;&#x5C0F;&#x5448;&#x6307;&#x6570;&#x7EA7;&#x6269;&#x589E;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x4E00;&#x5B9A;&#x5F8B;&#x57FA;&#x4E8E;&#x56FE;&#x8BBA;&#xFF0C;&#x56FE;&#x8BBA;&#x4E2D;&#x7684;&#x6548;&#x7528;&#x4E0E;&#x53EF;&#x80FD;&#x7684;&#x5B50;&#x7EC4;&#x6570;&#x91CF;&#x5448;&#x6B63;&#x6BD4;&#xFF0C;&#x5E76;&#x4E14;&#x8BE5;&#x589E;&#x957F;&#x901F;&#x5EA6;&#x4F1A;&#x6BD4;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x6570;&#x91CF;&#x548C;&#x53EF;&#x80FD;&#x7684;&#x8FDE;&#x63A5;&#x5BF9;&#x6570;&#x91CF;&#x8981;&#x5FEB;&#x3002;&#x5965;&#x5FB7;&#x5229;&#x5179;&#x79D1; (Odlyzko) &#x548C;&#x5176;&#x4ED6;&#x4EBA;&#x8BA4;&#x4E3A;&#xFF0C;&#x91CC;&#x5FB7;&#x5B9A;&#x5F8B;&#x5938;&#x5927;&#x4E86;&#x7CFB;&#x7EDF;&#x672C;&#x8EAB;&#x7684;&#x4EF7;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x6CA1;&#x6709;&#x8003;&#x8651;&#x5230;&#x7F51;&#x7EDC;&#x6548;&#x5E94;&#x4E2D;&#x4EBA;&#x7C7B;&#x8BA4;&#x77E5;&#x7684;&#x9650;&#x5236;&#x3002;</p>
+<p>&#x53C2;&#x89C1;:</p>
+<ul>
+<li><a href="#%e6%a2%85%e7%89%b9%e5%8d%a1%e5%a4%ab%e5%ae%9a%e5%be%8b-metcalfes-law">&#x6885;&#x7279;&#x5361;&#x592B;&#x5B9A;&#x5F8B; (Metcalfe&apos;s Law)</a></li>
+<li><a href="#%e9%82%93%e5%b7%b4%e6%95%b0%e5%ad%97-dunbars-number">&#x9093;&#x5DF4;&#x6570;&#x5B57;</a></li>
+</ul>
+<h3 id="&#x590D;&#x6742;&#x6027;&#x5B88;&#x6052;&#x5B9A;&#x5F8B;-the-law-of-conservation-of-complexity-or-teslers-law">&#x590D;&#x6742;&#x6027;&#x5B88;&#x6052;&#x5B9A;&#x5F8B; (The Law of Conservation of Complexity or Tesler&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Law_of_conservation_of_complexity" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<p>&#x8BE5;&#x5B9A;&#x5F8B;&#x8868;&#x660E;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B58;&#x5728;&#x7740;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x7684;&#x590D;&#x6742;&#x6027;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x51CF;&#x5C11;&#x3002;</p>
+<p>&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x67D0;&#x4E9B;&#x590D;&#x6742;&#x6027;&#x662F;<strong>&#x65E0;&#x610F;&#x7684;</strong>&#x3002;&#x8FD9;&#x662F;&#x7531;&#x4E8E;&#x7ED3;&#x6784;&#x4E0D;&#x826F;&#xFF0C;&#x9519;&#x8BEF;&#x6216;&#x8005;&#x7CDF;&#x7CD5;&#x7684;&#x5EFA;&#x6A21;&#x9020;&#x6210;&#x7684;&#x3002;&#x8FD9;&#x79CD;&#x65E0;&#x610F;&#x7684;&#x590D;&#x6742;&#x6027;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x6216;&#x8005;&#x6D88;&#x9664;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x7531;&#x4E8E;&#x5F85;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x56FA;&#x6709;&#x7684;&#x590D;&#x6742;&#x6027;&#xFF0C;&#x67D0;&#x4E9B;&#x590D;&#x6742;&#x6027;&#x662F;<strong>&#x5185;&#x5728;&#x7684;</strong>&#x3002;&#x8FD9;&#x79CD;&#x590D;&#x6742;&#x6027;&#x53EF;&#x4EE5;&#x8F6C;&#x79FB;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x6D88;&#x9664;&#x3002;</p>
+<p>&#x8BE5;&#x5B9A;&#x5F8B;&#x6709;&#x8DA3;&#x7684;&#x4E00;&#x70B9;&#x662F;&#xFF0C;&#x5373;&#x4F7F;&#x7B80;&#x5316;&#x6574;&#x4E2A;&#x7CFB;&#x7EDF;&#xFF0C;&#x5185;&#x5728;&#x7684;&#x590D;&#x6742;&#x6027;&#x4E5F;&#x4E0D;&#x4F1A;&#x964D;&#x4F4E;&#x3002;&#x5B83;&#x4F1A;<strong>&#x8F6C;&#x79FB;&#x5230;&#x7528;&#x6237;</strong>&#xFF0C;&#x5E76;&#x4E14;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x4EE5;&#x66F4;&#x590D;&#x6742;&#x7684;&#x65B9;&#x5F0F;&#x884C;&#x4E8B;&#x3002;</p>
+<h3 id="&#x62BD;&#x8C61;&#x6CC4;&#x6F0F;&#x5B9A;&#x5F8B;-the-law-of-leaky-abstractions">&#x62BD;&#x8C61;&#x6CC4;&#x6F0F;&#x5B9A;&#x5F8B; (The Law of Leaky Abstractions)</h3>
+<ul>
+<li><a href="https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/" target="_blank">&#x82F1;&#x6587;&#x5728;&#x7EBF;&#x5730;&#x5740;</a></li>
+</ul>
+<blockquote>
+<p>&#x5728;&#x67D0;&#x79CD;&#x7A0B;&#x5EA6;&#x4E0A;&#xFF0C;&#x6240;&#x6709;&#x975E;&#x5E73;&#x51E1;&#x7684;&#x62BD;&#x8C61;&#x90FD;&#x662F;&#x6709;&#x6CC4;&#x6F0F;&#x7684;&#x3002;</p>
+<p><a href="https://twitter.com/spolsky" target="_blank">&#x4E54;&#x5C14;&#x65AF;&#xB7;&#x6CE2;&#x5C14;&#x65AF;&#x57FA;</a> (Joel Spolsky)</p>
+</blockquote>
+<p>&#x8BE5;&#x5B9A;&#x5F8B;&#x6307;&#x51FA;&#xFF0C;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x7B80;&#x5316;&#x590D;&#x6742;&#x7CFB;&#x7EDF;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x5C06;&#x5E95;&#x5C42;&#x7CFB;&#x7EDF;&#x6CC4;&#x6F0F;&#x51FA;&#x6765;&#xFF0C;&#x4F7F;&#x5F97;&#x62BD;&#x8C61;&#x8868;&#x73B0;&#x51FA;&#x610F;&#x5916;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#x52A0;&#x8F7D;&#x6587;&#x4EF6;&#x5E76;&#x8BFB;&#x53D6;&#x5176;&#x5185;&#x5BB9;&#x3002;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF; API &#x662F;&#x8F83;&#x4F4E;&#x7EA7;&#x522B;&#x5185;&#x6838;&#x7CFB;&#x7EDF;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x5B83;&#x4EEC;&#x672C;&#x8EAB;&#x662F;&#x4E0E;&#x78C1;&#x76D8;&#xFF08;&#x6216; SSD &#x7684;&#x95EA;&#x5B58;&#xFF09;&#x4E0A;&#x7684;&#x6570;&#x636E;&#x66F4;&#x6539;&#x76F8;&#x5173;&#x7684;&#x7269;&#x7406;&#x8FC7;&#x7A0B;&#x7684;&#x62BD;&#x8C61;&#x3002;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5904;&#x7406;&#x6587;&#x4EF6;&#xFF08;&#x5982;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#x6D41;&#xFF09;&#x7684;&#x62BD;&#x8C61;&#x5C06;&#x8D77;&#x4F5C;&#x7528;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5BF9;&#x4E8E;&#x78C1;&#x76D8;&#x9A71;&#x52A8;&#x5668;&#xFF0C;&#x987A;&#x5E8F;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5C06;&#x6BD4;&#x968F;&#x673A;&#x8BBF;&#x95EE;&#x5FEB;&#x5F97;&#x591A;&#xFF08;&#x7531;&#x4E8E;&#x9875;&#x9762;&#x9519;&#x8BEF;&#x7684;&#x5F00;&#x9500;&#x589E;&#x52A0;&#xFF09;&#x3002;&#x4F46;&#x5BF9;&#x4E8E; SSD &#x9A71;&#x52A8;&#x5668;&#xFF0C;&#x6B64;&#x5F00;&#x9500;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x3002;&#x9700;&#x8981;&#x7406;&#x89E3;&#x57FA;&#x7840;&#x7EC6;&#x8282;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x7D22;&#x5F15;&#x6587;&#x4EF6;&#x7684;&#x826F;&#x597D;&#x7ED3;&#x6784;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x968F;&#x673A;&#x8BBF;&#x95EE;&#x7684;&#x5F00;&#x9500;&#xFF09;&#xFF0C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x9700;&#x8981;&#x5408;&#x7406;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x6765;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7684;&#x7EC6;&#x8282;&#x3002;</p>
+<p>&#x5F53;&#x5F15;&#x5165;&#x66F4;&#x591A;&#x7684;&#x62BD;&#x8C61;&#x65F6;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4F1A;&#x53D8;&#x5F97;&#x66F4;&#x590D;&#x6742;&#x3002;Linux &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5141;&#x8BB8;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x8BBF;&#x95EE;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x5728;&#x672C;&#x5730;&#x8868;&#x793A;&#x4E3A;<strong>&#x666E;&#x901A;</strong>&#x6587;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x5B58;&#x5728;&#x7F51;&#x7EDC;&#x6545;&#x969C;&#xFF0C;&#x8FD9;&#x79CD;&#x62BD;&#x8C61;&#x5C06;&#x4F1A;<strong>&#x6CC4;&#x6F0F;</strong>&#x3002;&#x5982;&#x679C;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5C06;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x89C6;&#x4E3A;<strong>&#x666E;&#x901A;</strong>&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x4E0D;&#x8003;&#x8651;&#x5B83;&#x4EEC;&#x53EF;&#x80FD;&#x4F1A;&#x53D7;&#x5230;&#x7F51;&#x7EDC;&#x5EF6;&#x8FDF;&#x548C;&#x6545;&#x969C;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x90A3;&#x4E48;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5C31;&#x4F1A;&#x51FA;&#x9519;&#x3002;</p>
+<p>&#x63CF;&#x8FF0;&#x8BE5;&#x5B9A;&#x5F8B;&#x7684;&#x6587;&#x7AE0;&#x8868;&#x660E;&#xFF0C;&#x8FC7;&#x5EA6;&#x4F9D;&#x8D56;&#x62BD;&#x8C61;&#xFF0C;&#x52A0;&#x4E0A;&#x5BF9;&#x5E95;&#x5C42;&#x8FC7;&#x7A0B;&#x7684;&#x7406;&#x89E3;&#x4E0D;&#x8DB3;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4F7F;&#x5F97;&#x95EE;&#x9898;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%E9%9A%90%E5%BC%8F%E6%8E%A5%E5%8F%A3%E5%AE%9A%E5%BE%8B-hyrums-law">&#x9690;&#x5F0F;&#x63A5;&#x53E3;&#x5B9A;&#x5F8B;</a></li>
+</ul>
+<p>&#x771F;&#x5B9E;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<ul>
+<li><a href="https://forums.adobe.com/thread/376152" target="_blank">Photoshop &#x542F;&#x52A8;&#x7F13;&#x6162;</a>&#xFF1A;&#x6211;&#x8FC7;&#x53BB;&#x9047;&#x5230;&#x8FC7;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x662F; Photoshop &#x542F;&#x52A8;&#x7F13;&#x6162;&#xFF0C;&#x6709;&#x65F6;&#x9700;&#x8981;&#x51E0;&#x5206;&#x949F;&#x3002;&#x95EE;&#x9898;&#x597D;&#x50CF;&#x662F; Photoshop &#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x4F1A;&#x8BFB;&#x53D6;&#x5F53;&#x524D;&#x9ED8;&#x8BA4;&#x6253;&#x5370;&#x673A;&#x7684;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x6253;&#x5370;&#x673A;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E00;&#x53F0;&#x7F51;&#x7EDC;&#x6253;&#x5370;&#x673A;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5F88;&#x957F;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x5C06;&#x7F51;&#x7EDC;&#x6253;&#x5370;&#x673A;&#x4E0E;&#x672C;&#x5730;&#x6253;&#x5370;&#x673A;&#x5F53;&#x4F5C;&#x540C;&#x6837;&#x7684;&#x62BD;&#x8C61;&#xFF0C;&#x5BFC;&#x81F4;&#x8FDE;&#x63A5;&#x4E0D;&#x826F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x3002;</li>
+</ul>
+<h3 id="&#x5E15;&#x91D1;&#x68EE;&#x7410;&#x788E;&#x5B9A;&#x7406;-the-law-of-triviality">&#x5E15;&#x91D1;&#x68EE;&#x7410;&#x788E;&#x5B9A;&#x7406; (The Law of Triviality)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Law_of_triviality" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%B8%95%E9%87%91%E6%A3%AE%E7%91%A3%E7%A2%8E%E5%AE%9A%E7%90%86" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<p>&#x8BE5;&#x5B9A;&#x7406;&#x663E;&#x793A;&#xFF0C;&#x7FA4;&#x4F53;&#x5C06;&#x7ED9;&#x4E88;&#x66F4;&#x591A;&#x7684;&#x65F6;&#x95F4;&#x548C;&#x6CE8;&#x610F;&#x529B;&#x6765;&#x5904;&#x7406;&#x7410;&#x788E;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7528;&#x6765;&#x5904;&#x7406;&#x4E25;&#x8083;&#x800C;&#x5B9E;&#x8D28;&#x6027;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x5E38;&#x89C1;&#x7684;&#x865A;&#x6784;&#x4F8B;&#x5B50;&#x662F;&#x59D4;&#x5458;&#x4F1A;&#x6279;&#x51C6;&#x6838;&#x7535;&#x7AD9;&#x7684;&#x8BA1;&#x5212;&#xFF0C;&#x4ED6;&#x4EEC;&#x5927;&#x90E8;&#x5206;&#x65F6;&#x95F4;&#x90FD;&#x5728;&#x8BA8;&#x8BBA;&#x81EA;&#x884C;&#x8F66;&#x68DA;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7535;&#x5382;&#x672C;&#x8EAB;&#x7B49;&#x66F4;&#x4E3A;&#x91CD;&#x8981;&#x7684;&#x8BBE;&#x8BA1;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5927;&#x91CF;&#x7684;&#x4E13;&#x4E1A;&#x77E5;&#x8BC6;&#x6216;&#x8005;&#x51C6;&#x5907;&#xFF0C;&#x5F88;&#x96BE;&#x7ED9;&#x975E;&#x5E38;&#x5927;&#x7684;&#x590D;&#x6742;&#x4E3B;&#x9898;&#x8BA8;&#x8BBA;&#x63D0;&#x4F9B;&#x5B9D;&#x8D35;&#x7684;&#x610F;&#x89C1;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x4EBA;&#x4EEC;&#x5E0C;&#x671B;&#x770B;&#x5230;&#x66F4;&#x591A;&#x610F;&#x89C1;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4ED6;&#x4EEC;&#x503E;&#x5411;&#x4E8E;&#x5C06;&#x5927;&#x91CF;&#x65F6;&#x95F4;&#x96C6;&#x4E2D;&#x5728;&#x5F88;&#x5BB9;&#x6613;&#x63A8;&#x6572;&#xFF0C;&#x4F46;&#x4E0D;&#x4E00;&#x5B9A;&#x88AB;&#x770B;&#x91CD;&#x7684;&#x5C0F;&#x7EC6;&#x8282;&#x4E0A;&#x3002;</p>
+<p>&#x7531;&#x4E0A;&#x9762;&#x7684;&#x865A;&#x6784;&#x4F8B;&#x5B50;&#x4EA7;&#x751F;&#x4E86; <strong>Bike Shedding</strong> &#x7684;&#x8BF4;&#x6CD5;&#xFF0C;&#x4EE5;&#x5F62;&#x5BB9;&#x5728;&#x7410;&#x788E;&#x7EC6;&#x8282;&#x4E0A;&#x6D6A;&#x8D39;&#x65F6;&#x95F4;&#x8FD9;&#x4E00;&#x884C;&#x4E3A;&#x3002;</p>
+<h3 id="unix-&#x54F2;&#x5B66;-the-unix-philosophy">Unix &#x54F2;&#x5B66; (The Unix Philosophy)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Unix_philosophy" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/Unix%E5%93%B2%E5%AD%A6" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<p>Unix &#x54F2;&#x5B66;&#x6307;&#x8F6F;&#x4EF6;&#x7EC4;&#x4EF6;&#x5E94;&#x8BE5;&#x5F88;&#x5C0F;&#xFF0C;&#x5E76;&#x4E13;&#x6CE8;&#x4E8E;&#x505A;&#x4E00;&#x4EF6;&#x7279;&#x5B9A;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x5C06;&#x5C0F;&#x800C;&#x7B80;&#x5355;&#x4EE5;&#x53CA;&#x5B9A;&#x4E49;&#x826F;&#x597D;&#x7684;&#x5355;&#x5143;&#x7EC4;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x5927;&#x800C;&#x590D;&#x6742;&#x7684;&#x591A;&#x7528;&#x9014;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EF;&#x4EE5;&#x66F4;&#x8F7B;&#x677E;&#x5730;&#x6784;&#x5EFA;&#x7CFB;&#x7EDF;&#x3002;</p>
+<p>&#x50CF;<strong>&#x5FAE;&#x670D;&#x52A1;&#x67B6;&#x6784;</strong>&#x8FD9;&#x79CD;&#x73B0;&#x4EE3;&#x5B9E;&#x8DF5;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x8FD9;&#x79CD;&#x54F2;&#x5B66;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x5176;&#x4E2D;&#x670D;&#x52A1;&#x5F88;&#x5C0F;&#xFF0C;&#x96C6;&#x4E2D;&#x4E8E;&#x505A;&#x4E00;&#x4EF6;&#x7279;&#x5B9A;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x7531;&#x7B80;&#x5355;&#x7684;&#x6784;&#x5EFA;&#x5757;&#x7EC4;&#x6210;&#x590D;&#x6742;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<h3 id="spotify-&#x6A21;&#x578B;-the-spotify-model">Spotify &#x6A21;&#x578B; (The Spotify Model)</h3>
+<ul>
+<li><a href="https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/" target="_blank">&#x82F1;&#x6587;&#x5728;&#x7EBF;&#x5730;&#x5740;</a></li>
+</ul>
+<p>Spotify &#x6A21;&#x578B;&#x662F;&#x56E2;&#x961F;&#x548C;&#x7EC4;&#x7EC7;&#x7ED3;&#x6784;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x5DF2;&#x88AB; Spotify &#x5B9E;&#x9A8C;&#x5BA4;&#x63A8;&#x5E7F;&#x5F00;&#x6765;&#x3002;&#x5728;&#x6B64;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;&#x56E2;&#x961F;&#x56F4;&#x7ED5;&#x529F;&#x80FD;&#x800C;&#x975E;&#x6280;&#x672F;&#x8FDB;&#x884C;&#x7EC4;&#x7EC7;&#x3002;</p>
+<p>Spotify &#x6A21;&#x578B;&#x8FD8;&#x666E;&#x53CA;&#x4E86;&#x90E8;&#x843D;&#x3001;&#x884C;&#x4F1A;&#x4EE5;&#x53CA;&#x7AE0;&#x8282;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x8FD9;&#x4E9B;&#x662F;&#x7EC4;&#x7EC7;&#x7ED3;&#x6784;&#x7684;&#x5176;&#x4ED6;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#x3002;</p>
+<h3 id="&#x6C83;&#x5FB7;&#x52D2;&#x5B9A;&#x5F8B;-wadlers-law">&#x6C83;&#x5FB7;&#x52D2;&#x5B9A;&#x5F8B; (Wadler&apos;s Law)</h3>
+<ul>
+<li><a href="https://wiki.haskell.org/Wadler&apos;s_Law" target="_blank">&#x82F1;&#x6587;&#x5728;&#x7EBF;&#x5730;&#x5740;</a></li>
+</ul>
+<blockquote>
+<p>&#x4EFB;&#x4F55;&#x8BED;&#x8A00;&#x8BBE;&#x8BA1;&#x4E2D;&#xFF0C;&#x8BA8;&#x8BBA;&#x4E0B;&#x9762;&#x5217;&#x8868;&#x4E2D;&#x67D0;&#x4E2A;&#x8981;&#x7D20;&#x6240;&#x82B1;&#x8D39;&#x7684;&#x603B;&#x65F6;&#x95F4;&#x4E0E;&#x5176;&#x4F4D;&#x7F6E;&#x6210;&#x6B63;&#x6BD4;&#x3002;</p>
+<ol>
+<li>&#x8BED;&#x4E49; (Semantics)</li>
+<li>&#x8BED;&#x6CD5; (Syntax)</li>
+<li>&#x8BCD;&#x6CD5; (Lexical syntax)</li>
+<li>&#x6CE8;&#x91CA;&#x8BED;&#x6CD5; (Lexical syntax of comments)</li>
+</ol>
+<p>&#xFF08;&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#xFF0C;&#x5728;&#x8BED;&#x4E49;&#x4E0A;&#x82B1;&#x8D39;&#x4E00;&#x4E2A;&#x5C0F;&#x65F6;&#xFF0C;&#x5C31;&#x8981;&#x5728;&#x6CE8;&#x91CA;&#x8BED;&#x6CD5;&#x4E0A;&#x82B1;&#x8D39;&#x516B;&#x4E2A;&#x5C0F;&#x65F6;&#xFF09;&#x3002;</p>
+</blockquote>
+<p>&#x4E0E; <a href="#%E5%B8%95%E9%87%91%E6%A3%AE%E7%90%90%E7%A2%8E%E5%AE%9A%E7%90%86-the-law-of-triviality">&#x5E15;&#x91D1;&#x68EE;&#x7410;&#x788E;&#x5B9A;&#x7406;</a> &#x7C7B;&#x4F3C;, &#x6C83;&#x5FB7;&#x52D2;&#x5B9A;&#x5F8B;&#x6307;&#x51FA;&#xFF0C;&#x5728;&#x8BBE;&#x8BA1;&#x8BED;&#x8A00;&#x65F6;&#xFF0C;&#x4E0E;&#x8FD9;&#x4E9B;&#x7279;&#x5F81;&#x7684;&#x91CD;&#x8981;&#x6027;&#x76F8;&#x6BD4;&#xFF0C;&#x82B1;&#x5728;&#x8BED;&#x8A00;&#x7ED3;&#x6784;&#x4E0A;&#x7684;&#x65F6;&#x95F4;&#x8FC7;&#x591A;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%E5%B8%95%E9%87%91%E6%A3%AE%E7%90%90%E7%A2%8E%E5%AE%9A%E7%90%86-the-law-of-triviality">&#x5E15;&#x91D1;&#x68EE;&#x7410;&#x788E;&#x5B9A;&#x7406;</a></li>
+</ul>
+<h3 id="&#x60E0;&#x987F;&#x5B9A;&#x5F8B;-wheatons-law">&#x60E0;&#x987F;&#x5B9A;&#x5F8B; (Wheaton&apos;s Law)</h3>
+<ul>
+<li><a href="http://www.wheatonslaw.com/" target="_blank">&#x7F51;&#x7AD9;&#x94FE;&#x63A5;</a></li>
+<li><a href="https://dontbeadickday.com/" target="_blank">&#x5B98;&#x65B9;&#x8282;&#x65E5;</a></li>
+</ul>
+<blockquote>
+<p>&#x4E0D;&#x8981;&#x50CF;&#x4E2A;&#x50BB;&#x5B50;&#x4E00;&#x6837;&#x3002;</p>
+<p><em>&#x5A01;&#x5C14;&#xB7;&#x60E0;&#x987F; (Wil Wheaton)</em></p>
+</blockquote>
+<p>&#x8FD9;&#x6761;&#x5B9A;&#x5F8B;&#x7531;&#x5A01;&#x5C14; &#xB7; &#x60E0;&#x987F;&#xFF08;&#x66FE;&#x51FA;&#x6F14;&#x8FC7;&#x661F;&#x9645;&#x8FF7;&#x822A;&#xFF1A;&#x4E0B;&#x4E00;&#x4EE3;&#x3001;&#x751F;&#x6D3B;&#x5927;&#x7206;&#x70B8;&#xFF09;&#x521B;&#x9020;&#xFF0C;&#x8FD9;&#x4E2A;&#x7B80;&#x6D01;&#x800C;&#x6709;&#x529B;&#x7684;&#x5B9A;&#x5F8B;&#x65E8;&#x5728;&#x4E13;&#x4E1A;&#x7EC4;&#x7EC7;&#x5185;&#x8425;&#x9020;&#x548C;&#x8C10;&#x548C;&#x5C0A;&#x91CD;&#x7684;&#x73AF;&#x5883;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x5728;&#x4E0E;&#x540C;&#x4E8B;&#x4EA4;&#x8C08;&#x3001;&#x4EE3;&#x7801;&#x5BA1;&#x67E5;&#x3001;&#x53CD;&#x9A73;&#x89C2;&#x70B9;&#x548C;&#x6279;&#x8BC4;&#x7684;&#x65F6;&#x5019;&#x6D3E;&#x4E0A;&#x7528;&#x573A;&#x3002;&#x800C;&#x4E14;&#x901A;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4EBA;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x4E13;&#x4E1A;&#x4EA4;&#x4E92;&#x4E5F;&#x540C;&#x6837;&#x9002;&#x7528;&#x3002;</p>
+<h2 id="&#x539F;&#x5219;">&#x539F;&#x5219;</h2>
+<p>&#x539F;&#x5219;&#x901A;&#x5E38;&#x662F;&#x4E0E;&#x8BBE;&#x8BA1;&#x76F8;&#x5173;&#x7684;&#x51C6;&#x5219;&#x3002;</p>
+<h3 id="&#x5446;&#x4F2F;&#x7279;&#x6CD5;&#x5219;-the-dilbert-principle">&#x5446;&#x4F2F;&#x7279;&#x6CD5;&#x5219; (The Dilbert Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dilbert_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%91%86%E4%BC%AF%E7%89%B9%E6%B3%95%E5%89%87" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x516C;&#x53F8;&#x4F1A;&#x503E;&#x5411;&#x4E8E;&#x7CFB;&#x7EDF;&#x5730;&#x5C06;&#x5DE5;&#x4F5C;&#x80FD;&#x529B;&#x5DEE;&#x7684;&#x5458;&#x5DE5;&#x63D0;&#x5347;&#x5230;&#x7BA1;&#x7406;&#x5C42;&#xFF0C;&#x4EE5;&#x4F7F;&#x4ED6;&#x4EEC;&#x8131;&#x79BB;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#x3002;</p>
+<p><em>&#x53F2;&#x8003;&#x7279;&#xB7;&#x4E9A;&#x5F53;&#x65AF; (Scott Adams)</em></p>
+</blockquote>
+<p>&#x5446;&#x4F2F;&#x7279;&#x539F;&#x5219;&#x662F;&#x7531;&#x53F2;&#x8003;&#x7279;&#xB7;&#x4E9A;&#x5F53;&#x65AF; (Dilbert &#x6F2B;&#x753B;&#x8FDE;&#x73AF;&#x753B;&#x7684;&#x521B;&#x5EFA;&#x8005;) &#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;&#x7BA1;&#x7406;&#x6982;&#x5FF5;&#xFF0C;&#x7075;&#x611F;&#x6765;&#x6E90;&#x4E8E;<a href="#%e5%bd%bc%e5%be%97%e5%8e%9f%e7%90%86-the-peter-principle">&#x5F7C;&#x5F97;&#x539F;&#x7406;</a>&#x3002;&#x6839;&#x636E;&#x5446;&#x4F2F;&#x7279;&#x539F;&#x5219;&#xFF0C;&#x5DE5;&#x4F5C;&#x80FD;&#x529B;&#x5DEE;&#x7684;&#x5458;&#x5DE5;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#x5230;&#x7BA1;&#x7406;&#x5C42;&#xFF0C;&#x4ECE;&#x800C;&#x9650;&#x5236;&#x4ED6;&#x4EEC;&#x6240;&#x80FD;&#x9020;&#x6210;&#x7684;&#x635F;&#x5BB3;&#x3002;&#x4E9A;&#x5F53;&#x65AF;&#x9996;&#x5148;&#x5728; 1995 &#x5E74;&#x300A;&#x534E;&#x5C14;&#x8857;&#x65E5;&#x62A5;&#x300B;&#x7684;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x89E3;&#x91CA;&#x4E86;&#x8FD9;&#x4E00;&#x539F;&#x5219;&#xFF0C;&#x968F;&#x540E;&#x5728;&#x4ED6; 1996 &#x5E74;&#x7684;&#x5546;&#x4E1A;&#x4E66;&#x7C4D;&#x300A;&#x5446;&#x4F2F;&#x7279;&#x539F;&#x5219;&#x300B;&#x4E2D;&#x8FDB;&#x884C;&#x4E86;&#x6269;&#x5C55;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#the-peter-principle">The Peter Principle</a></li>
+<li><a href="#%e6%99%ae%e7%89%b9%e5%ae%9a%e5%be%8b-putts-law">&#x666E;&#x7279;&#x5B9A;&#x5F8B;</a></li>
+</ul>
+<h3 id="&#x5E15;&#x7D2F;&#x6258;&#x6CD5;&#x5219;-the-pareto-principle-or-the-8020-rule">&#x5E15;&#x7D2F;&#x6258;&#x6CD5;&#x5219; (The Pareto Principle or The 80/20 Rule)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Pareto_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%B8%95%E7%B4%AF%E6%89%98%E6%B3%95%E5%88%99" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x751F;&#x6D3B;&#x4E2D;&#x5927;&#x591A;&#x6570;&#x4E8B;&#x60C5;&#x4E0D;&#x662F;&#x5747;&#x5300;&#x5206;&#x5E03;&#x7684;&#x3002;</p>
+</blockquote>
+<p>&#x5E15;&#x7D2F;&#x6258;&#x6CD5;&#x5219;&#x53EF;&#x4EE5;&#x5E2E;&#x4F60;&#x8BA4;&#x8BC6;&#x5230;&#x5927;&#x591A;&#x6570;&#x7ED3;&#x679C;&#x6765;&#x81EA;&#x5C11;&#x6570;&#x6295;&#x5165;&#xFF1A;</p>
+<ul>
+<li>&#x67D0;&#x4E2A;&#x8F6F;&#x4EF6;&#x7684; 80&#xFF05; &#x4EE3;&#x7801;&#x53EA;&#x5360;&#x4E86;&#x603B;&#x5206;&#x914D;&#x65F6;&#x95F4;&#x7684; 20&#xFF05;&#xFF08;&#x76F8;&#x53CD;&#xFF0C;&#x6700;&#x96BE;&#x7684; 20&#xFF05; &#x4EE3;&#x7801;&#x90E8;&#x5206;&#x5360;&#x7528;&#x4E86; 80&#xFF05; &#x7684;&#x65F6;&#x95F4;&#xFF09;</li>
+<li>20&#xFF05; &#x7684;&#x52AA;&#x529B;&#x4EA7;&#x751F;&#x4E86; 80&#xFF05; &#x7684;&#x7ED3;&#x679C;</li>
+<li>20&#xFF05; &#x7684;&#x5DE5;&#x4F5C;&#x521B;&#x9020;&#x4E86; 80&#xFF05; &#x7684;&#x6536;&#x5165;</li>
+<li>20&#xFF05; &#x7684;&#x9519;&#x8BEF;&#x5BFC;&#x81F4;&#x4E86; 80&#xFF05; &#x7684;&#x5D29;&#x6E83;</li>
+<li>20&#xFF05; &#x7684;&#x529F;&#x80FD;&#x5BFC;&#x81F4;&#x4E86; 80&#xFF05; &#x7684;&#x4F7F;&#x7528;&#x91CF;</li>
+</ul>
+<p>&#x5728; 20 &#x4E16;&#x7EAA; 40 &#x5E74;&#x4EE3;&#xFF0C;&#x516C;&#x8BA4;&#x4E3A;&#x8D28;&#x91CF;&#x63A7;&#x5236;&#x4E4B;&#x7236;&#x7684;&#x7F8E;&#x56FD;&#x7F57;&#x9A6C;&#x5C3C;&#x4E9A;&#x5DE5;&#x7A0B;&#x5E08;&#x7EA6;&#x745F;&#x592B;&#xB7;&#x6731;&#x5170;&#x535A;&#x58EB;&#xFF0C;<a href="https://en.wikipedia.org/wiki/Joseph_M._Juran" target="_blank">&#x5F00;&#x59CB;&#x5C06;&#x5E15;&#x7D2F;&#x6258;&#x6CD5;&#x5219;&#x5E94;&#x7528;&#x4E8E;&#x8D28;&#x91CF;&#x95EE;&#x9898;</a>&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A;<strong>&#x4E8C;&#x516B;&#x6CD5;&#x5219;</strong>&#xFF0C;<strong>&#x91CD;&#x8981;&#x7684;&#x5C11;&#x6570;&#x6CD5;&#x5219;</strong>&#x548C;<strong>&#x56E0;&#x7D20;&#x7A00;&#x758F;&#x539F;&#x5219;</strong>&#x3002;</p>
+<p>&#x73B0;&#x5B9E;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<ul>
+<li>&#x5FAE;&#x8F6F; 2002 &#x5E74;&#x7684;&#x62A5;&#x544A;&#x8868;&#x660E;&#xFF0C;&#x4FEE;&#x590D;&#x6700;&#x5E38;&#x51FA;&#x73B0;&#x7684; 20&#xFF05; &#x9519;&#x8BEF;&#xFF0C;&#x5C06;&#x6D88;&#x9664; Windows &#x548C; Office &#x4E2D; 80&#xFF05; &#x7684;
+&#x9519;&#x8BEF;&#x548C;&#x5D29;&#x6E83;&#x3002;<a href="https://www.crn.com/news/security/18821726/microsofts-ceo-80-20-rule-applies-to-bugs-not-just-features.htm" target="_blank">&#x62A5;&#x544A;&#x5730;&#x5740;</a></li>
+</ul>
+<h3 id="&#x5F7C;&#x5F97;&#x539F;&#x7406;-the-peter-principle">&#x5F7C;&#x5F97;&#x539F;&#x7406; (The Peter Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Peter_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%BD%BC%E5%BE%97%E5%8E%9F%E7%90%86" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5728;&#x7B49;&#x7EA7;&#x5236;&#x5EA6;&#x4E2D;&#xFF0C;&#x4EBA;&#x5F80;&#x5F80;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#x5230;&#x4ED6;&#x4EEC;&#x7684;&#x201C;&#x65E0;&#x6CD5;&#x80DC;&#x4EFB;&#x7684;&#x6C34;&#x5E73;&#x201D;&#x3002;</p>
+<p><em>&#x52B3;&#x4F26;&#x65AF;&#xB7;&#x5F7C;&#x5F97; (Laurence J. Peter)</em></p>
+</blockquote>
+<p>&#x8FD9;&#x662F;&#x7531;&#x52B3;&#x4F26;&#x65AF;&#xB7;&#x5F7C;&#x5F97;&#x63D0;&#x51FA;&#x7684;&#x4E00;&#x4E2A;&#x7BA1;&#x7406;&#x6982;&#x5FF5;&#x3002;&#x5F7C;&#x5F97;&#x539F;&#x7406;&#x8BA4;&#x4E3A;&#xFF0C;&#x64C5;&#x957F;&#x5DE5;&#x4F5C;&#x7684;&#x4EBA;&#x4F1A;&#x5F97;&#x5230;&#x63D0;&#x5347;&#xFF0C;&#x76F4;&#x5230;&#x4ED6;&#x4EEC;&#x8FBE;&#x5230;&#x4E0D;&#x518D;&#x6210;&#x529F;&#x7684;&#x6C34;&#x5E73; (&#x5373;&#x4ED6;&#x4EEC;&#x6240;&#x201C;&#x65E0;&#x6CD5;&#x80DC;&#x4EFB;&#x7684;&#x6C34;&#x5E73;&#x201D;)&#x3002;&#x57FA;&#x4E8E;&#x6B64;&#xFF0C;&#x7531;&#x4E8E;&#x4ED6;&#x4EEC;&#x8D44;&#x5386;&#x66F4;&#x9AD8;&#xFF0C;&#x88AB;&#x516C;&#x53F8;&#x5F00;&#x9664;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x8F83;&#x5C0F; (&#x9664;&#x975E;&#x4ED6;&#x4EEC;&#x8868;&#x73B0;&#x975E;&#x5E38;&#x7CDF;&#x7CD5;)&#x3002;&#x800C;&#x4E14;&#x4ED6;&#x4EEC;&#x5C06;&#x7EE7;&#x7EED;&#x62C5;&#x4EFB;&#x51E0;&#x4E4E;&#x6CA1;&#x6709;&#x672C;&#x804C;&#x6280;&#x80FD;&#x7684;&#x804C;&#x4F4D;&#xFF0C;&#x5373;&#x4F7F;&#x90A3;&#x4E9B;&#x539F;&#x672C;&#x8BA9;&#x4ED6;&#x4EEC;&#x6210;&#x529F;&#x7684;&#x80FD;&#x529B;&#x5728;&#x65B0;&#x5DE5;&#x4F5C;&#x4E2D;&#x5E76;&#x65E0;&#x5FC5;&#x8981;&#x3002;</p>
+<p>&#x6709;&#x7684;&#x5DE5;&#x7A0B;&#x5E08;&#x5BF9;&#x6B64;&#x7279;&#x522B;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x5B83;&#x4EEC;&#x6700;&#x521D;&#x4ECE;&#x4E8B;&#x7684;&#x662F;&#x6DF1;&#x5EA6;&#x7684;&#x6280;&#x672F;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F46;&#x8D70;&#x4E0A;&#x4E86;<strong>&#x7BA1;&#x7406;</strong>&#x5176;&#x4ED6;&#x5DE5;&#x7A0B;&#x5E08;&#x7684;&#x804C;&#x4E1A;&#x9053;&#x8DEF;&#x2014;&#x2014;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x6280;&#x80FD;&#x6811;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%e5%91%86%e4%bc%af%e7%89%b9%e6%b3%95%e5%88%99">&#x5446;&#x4F2F;&#x7279;&#x6CD5;&#x5219;</a></li>
+<li><a href="#%e6%99%ae%e7%89%b9%e5%ae%9a%e5%be%8b-putts-law">&#x666E;&#x7279;&#x5B9A;&#x5F8B;</a></li>
+</ul>
+<h3 id="&#x9C81;&#x68D2;&#x6027;&#x539F;&#x5219;-the-robustness-principle-or-postels-law">&#x9C81;&#x68D2;&#x6027;&#x539F;&#x5219; (The Robustness Principle or Postel&apos;s Law)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Robustness_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5728;&#x81EA;&#x5DF1;&#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x4E0A;&#x8981;&#x4FDD;&#x5B88;, &#x5728;&#x63A5;&#x53D7;&#x522B;&#x4EBA;&#x7684;&#x4E8B;&#x60C5;&#x4E0A;&#x8981;&#x81EA;&#x7531;&#x3002;</p>
+</blockquote>
+<p>&#x901A;&#x5E38;&#x5E94;&#x7528;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x8BE5;&#x539F;&#x5219;&#x6307;&#x51FA;&#xFF0C;&#x4F60;&#x53D1;&#x9001;&#x7ED9;&#x5176;&#x4ED6;&#x4EBA;&#x7684;&#x5185;&#x5BB9;&#x5E94;&#x5C3D;&#x53EF;&#x80FD;&#x6700;&#x5C0F;&#x4E14;&#x7B26;&#x5408;&#x8981;&#x6C42;&#xFF0C;&#x5E76;&#x4E14;&#x5904;&#x7406;&#x4E0D;&#x7B26;&#x5408;&#x8981;&#x6C42;&#x7684;&#x8F93;&#x5165;&#x3002;</p>
+<p>&#x8BE5;&#x539F;&#x5219;&#x7684;&#x76EE;&#x6807;&#x662F;&#x6784;&#x5EFA;&#x7A33;&#x5065;&#x7684;&#x7CFB;&#x7EDF;&#x3002;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x610F;&#x56FE;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x5904;&#x7406;&#x4E0D;&#x826F;&#x7684;&#x8F93;&#x5165;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x63A5;&#x53D7;&#x9519;&#x8BEF;&#x683C;&#x5F0F;&#x7684;&#x8F93;&#x5165;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x5B89;&#x5168;&#x9690;&#x60A3;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x6B64;&#x7C7B;&#x7684;&#x8F93;&#x5165;&#x672A;&#x7ECF;&#x8FC7;&#x5145;&#x5206;&#x6D4B;&#x8BD5;&#x3002;</p>
+<h3 id="solid">SOLID</h3>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7F29;&#x5199;&#xFF0C;&#x6307;&#x7684;&#x662F;&#xFF1A;</p>
+<ul>
+<li>S&#xFF1A;<a href="#%E5%8D%95%E4%B8%80%E5%8A%9F%E8%83%BD%E5%8E%9F%E5%88%99-the-single-responsibility-principle">&#x5355;&#x4E00;&#x529F;&#x80FD;&#x539F;&#x5219; (The Single Responsibility Principle)</a></li>
+<li>O&#xFF1A;<a href="#%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99-the-openclosed-principle">&#x5F00;&#x95ED;&#x539F;&#x5219; (The Open/Closed Principle)</a></li>
+<li>L&#xFF1A;<a href="#%E9%87%8C%E6%B0%8F%E6%9B%BF%E6%8D%A2%E5%8E%9F%E5%88%99-the-liskov-substitution-principle">&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219; (The Liskov Substitution Principle)</a></li>
+<li>I&#xFF1A;<a href="#%E6%8E%A5%E5%8F%A3%E9%9A%94%E7%A6%BB%E5%8E%9F%E5%88%99-the-interface-segregation-principle">&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x539F;&#x5219; (The Interface Segregation Principle)</a></li>
+<li>D&#xFF1A;<a href="#%E4%BE%9D%E8%B5%96%E5%8F%8D%E8%BD%AC%E5%8E%9F%E5%88%99-the-dependency-inversion-principle">&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;&#x539F;&#x5219; (The Dependency Inversion Principle)</a></li>
+</ul>
+<p>&#x8FD9;&#x4E9B;&#x662F; <a href="#todo">Object-Oriented Programming</a> &#x7684;&#x5173;&#x952E;&#x539F;&#x5219;&#x3002;&#x8BF8;&#x5982;&#x6B64;&#x7C7B;&#x7684;&#x8BBE;&#x8BA1;&#x539F;&#x5219;&#x80FD;&#x591F;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x6784;&#x5EFA;&#x66F4;&#x6613;&#x4E8E;&#x7EF4;&#x62A4;&#x7684;&#x7CFB;&#x7EDF;&#x3002;</p>
+<h3 id="&#x5355;&#x4E00;&#x529F;&#x80FD;&#x539F;&#x5219;-the-single-responsibility-principle">&#x5355;&#x4E00;&#x529F;&#x80FD;&#x539F;&#x5219; (The Single Responsibility Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%8D%95%E4%B8%80%E5%8A%9F%E8%83%BD%E5%8E%9F%E5%88%99" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x6216;&#x8005;&#x7C7B;&#x53EA;&#x5E94;&#x8BE5;&#x6709;&#x4E00;&#x9879;&#x529F;&#x80FD;&#x3002;</p>
+</blockquote>
+<p><a href="#solid">SOLID</a> &#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x539F;&#x5219;&#x3002;&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x8868;&#x660E;&#x6A21;&#x5757;&#x6216;&#x8005;&#x7C7B;&#x53EA;&#x5E94;&#x8BE5;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5BF9;&#x7A0B;&#x5E8F;&#x529F;&#x80FD;&#x7684;&#x5355;&#x4E2A;&#x5C0F;&#x66F4;&#x6539;&#xFF0C;&#x5E94;&#x8BE5;&#x53EA;&#x9700;&#x8981;&#x66F4;&#x6539;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x66F4;&#x6539;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x590D;&#x6742;&#x6027;&#x7684;&#x65B9;&#x5F0F;&#x5E94;&#x8BE5;&#x53EA;&#x9700;&#x8981;&#x66F4;&#x6539;&#x7A0B;&#x5E8F;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x7406;&#x8BBA;&#x4E0A;&#x8BB2;&#xFF0C;&#x8FD9;&#x4F7F;&#x4EE3;&#x7801;&#x66F4;&#x5065;&#x58EE;&#xFF0C;&#x66F4;&#x5BB9;&#x6613;&#x66F4;&#x6539;&#x3002;&#x77E5;&#x9053;&#x6B63;&#x5728;&#x66F4;&#x6539;&#x7684;&#x7EC4;&#x4EF6;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6D4B;&#x8BD5;&#x66F4;&#x6539;&#x66F4;&#x5BB9;&#x6613;&#x3002;&#x4F7F;&#x7528;&#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x66F4;&#x6539;&#x5BC6;&#x7801;&#x590D;&#x6742;&#x6027;&#x7EC4;&#x4EF6;&#x5E94;&#x8BE5;&#x53EA;&#x5F71;&#x54CD;&#x4E0E;&#x5BC6;&#x7801;&#x590D;&#x6742;&#x6027;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;&#x3002;&#x53D8;&#x66F4;&#x5177;&#x6709;&#x8BB8;&#x591A;&#x529F;&#x80FD;&#x7684;&#x7EC4;&#x4EF6;&#x53EF;&#x80FD;&#x8981;&#x56F0;&#x96BE;&#x5F97;&#x591A;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#todo">Object-Orientated Programming</a></li>
+<li><a href="#solid">SOLID</a></li>
+</ul>
+<h3 id="&#x5F00;&#x95ED;&#x539F;&#x5219;-the-openclosed-principle">&#x5F00;&#x95ED;&#x539F;&#x5219; (The Open/Closed Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x5B9E;&#x4F53;&#x5E94;&#x5F00;&#x653E;&#x6269;&#x5C55;&#x5E76;&#x5173;&#x95ED;&#x4FEE;&#x6539;&#x3002;</p>
+</blockquote>
+<p><a href="#solid">SOLID</a> &#x7684;&#x7B2C;&#x4E8C;&#x4E2A;&#x539F;&#x5219;&#x3002;&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x6307;&#x51FA;&#x5B9E;&#x4F53;&#xFF08;&#x53EF;&#x4EE5;&#x662F;&#x7C7B;&#x3001;&#x6A21;&#x5757;&#x3001;&#x51FD;&#x6570;&#x7B49;&#xFF09;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x4F7F;&#x5B83;&#x4EEC;&#x7684;&#x884C;&#x4E3A;&#x6613;&#x4E8E;&#x6269;&#x5C55;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x7684;&#x6269;&#x5C55;&#x884C;&#x4E3A;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x4E3E;&#x4E00;&#x4E2A;&#x5047;&#x8BBE;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x60F3;&#x8C61;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x5C06; Markdown &#x8F6C;&#x6362;&#x4E3A; HTML &#x7684;&#x6A21;&#x5757;&#x3002;&#x5982;&#x679C;&#x53EF;&#x4EE5;&#x6269;&#x5C55;&#x6A21;&#x5757;&#xFF0C;&#x800C;&#x4E0D;&#x4FEE;&#x6539;&#x5185;&#x90E8;&#x6A21;&#x5757;&#x6765;&#x5904;&#x7406;&#x65B0;&#x7684; markdown &#x7279;&#x5F81;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x4FEE;&#x6539;&#x5185;&#x90E8;&#x6A21;&#x5757;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x5F00;&#x653E;&#x6269;&#x5C55;&#x3002;&#x5982;&#x679C;&#x7528;&#x6237;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;&#x5904;&#x7406;&#x73B0;&#x6709; Markdown &#x7279;&#x5F81;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x5173;&#x95ED;&#x4FEE;&#x6539;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x4E0E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7D27;&#x5BC6;&#x76F8;&#x5173;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x8BA1;&#x5BF9;&#x8C61;&#x4EE5;&#x4FBF;&#x4E8E;&#x6269;&#x5C55;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x4EE5;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x65B9;&#x5F0F;&#x6539;&#x53D8;&#x5176;&#x73B0;&#x6709;&#x5BF9;&#x8C61;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#todo">Object-Orientated Programming</a></li>
+<li><a href="#solid">SOLID</a></li>
+</ul>
+<h3 id="&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219;-the-liskov-substitution-principle">&#x91CC;&#x6C0F;&#x66FF;&#x6362;&#x539F;&#x5219; (The Liskov Substitution Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E9%87%8C%E6%B0%8F%E6%9B%BF%E6%8D%A2%E5%8E%9F%E5%88%99" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x7834;&#x574F;&#x7CFB;&#x7EDF;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7528;&#x5B50;&#x7C7B;&#x578B;&#x66FF;&#x6362;&#x7C7B;&#x578B;&#x3002;</p>
+</blockquote>
+<p><a href="#solid">SOLID</a> &#x7684;&#x7B2C;&#x4E09;&#x4E2A;&#x539F;&#x5219;&#x3002;&#x8BE5;&#x539F;&#x5219;&#x6307;&#x51FA;&#xFF0C;&#x5982;&#x679C;&#x7EC4;&#x4EF6;&#x4F9D;&#x8D56;&#x4E8E;&#x7C7B;&#x578B;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5E94;&#x8BE5;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x8BE5;&#x7C7B;&#x578B;&#x7684;&#x5B50;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x7CFB;&#x7EDF;&#x5931;&#x8D25;&#x6216;&#x8005;&#x5FC5;&#x987B;&#x77E5;&#x9053;&#x8BE5;&#x5B50;&#x7C7B;&#x578B;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8BFB;&#x53D6; XML &#x6587;&#x6863;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F7F;&#x7528;&#x57FA;&#x7C7B;&#x578B; <strong>file</strong>&#xFF0C;&#x5219;&#x4ECE; <strong>file</strong> &#x6D3E;&#x751F;&#x7684;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;&#xFF0C;&#x90FD;&#x80FD;&#x7528;&#x5728;&#x8BE5;&#x65B9;&#x6CD5;&#x4E2D;&#x3002; &#x5982;&#x679C; <strong>file</strong> &#x652F;&#x6301;&#x53CD;&#x5411;&#x67E5;&#x627E;&#xFF0C;&#x5E76;&#x4E14; xml &#x89E3;&#x6790;&#x5668;&#x4F7F;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x6D3E;&#x751F;&#x7C7B;&#x578B; <strong>network file</strong> &#x5C1D;&#x8BD5;&#x53CD;&#x5411;&#x67E5;&#x627E;&#x65F6;&#x5931;&#x8D25;&#xFF0C;&#x5219; <strong>network file</strong> &#x5C06;&#x8FDD;&#x53CD;&#x8BE5;&#x539F;&#x5219;&#x3002;</p>
+<p>&#x8BE5;&#x539F;&#x5219;&#x4E0E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7D27;&#x5BC6;&#x76F8;&#x5173;&#xFF0C;&#x5FC5;&#x987B;&#x4ED4;&#x7EC6;&#x5EFA;&#x6A21;&#x3001;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x8BA9;&#x7CFB;&#x7EDF;&#x7528;&#x6237;&#x6DF7;&#x6DC6;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#todo">Object-Orientated Programming</a></li>
+<li><a href="#solid">SOLID</a></li>
+</ul>
+<h3 id="&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x539F;&#x5219;-the-interface-segregation-principle">&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x539F;&#x5219; (The Interface Segregation Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Interface_segregation_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E6%8E%A5%E5%8F%A3%E9%9A%94%E7%A6%BB%E5%8E%9F%E5%88%99" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x4E0D;&#x5E94;&#x5F3A;&#x5236;&#x4EFB;&#x4F55;&#x5BA2;&#x6237;&#x7AEF;&#x4F9D;&#x8D56;&#x4E8E;&#x5B83;&#x4E0D;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+</blockquote>
+<p><a href="#solid">SOLID</a> &#x7684;&#x7B2C;&#x56DB;&#x4E2A;&#x539F;&#x5219;&#x3002;&#x8BE5;&#x539F;&#x5219;&#x6307;&#x51FA;&#x7EC4;&#x4EF6;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x4E0D;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x4E8E;&#x5B83;&#x5B9E;&#x9645;&#x4E0A;&#x4E0D;&#x4F7F;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4E3E;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x8BFB;&#x53D6; XML &#x6587;&#x6863;&#x3002;&#x5B83;&#x53EA;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x5B57;&#x8282;&#xFF0C;&#x5411;&#x524D;&#x79FB;&#x52A8;&#x6216;&#x5411;&#x540E;&#x79FB;&#x52A8;&#x3002;&#x5982;&#x679C;&#x7531;&#x4E8E;&#x4E00;&#x4E2A;&#x4E0E;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x4E0D;&#x76F8;&#x5173;&#x7684;&#x529F;&#x80FD;&#x53D1;&#x751F;&#x66F4;&#x6539;&#xFF08;&#x4F8B;&#x5982;&#x66F4;&#x65B0;&#x6587;&#x4EF6;&#x5B89;&#x5168;&#x6027;&#x7684;&#x6743;&#x9650;&#x6A21;&#x578B;&#xFF09;&#xFF0C;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x8BE5;&#x539F;&#x5219;&#x5DF2;&#x5931;&#x6548;&#x3002;&#x6587;&#x4EF6;&#x6700;&#x597D;&#x5B9E;&#x73B0; <strong>&#x53EF;&#x67E5;&#x8BE2;&#x6D41;</strong> &#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x8BA9; XML &#x8BFB;&#x53D6;&#x5668;&#x4F7F;&#x7528;&#x8BE5;&#x63A5;&#x53E3;&#x3002;</p>
+<p>&#x8BE5;&#x539F;&#x5219;&#x4E0E;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7D27;&#x5BC6;&#x76F8;&#x5173;&#xFF0C;&#x5176;&#x4E2D;&#x63A5;&#x53E3;&#xFF0C;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x548C;&#x62BD;&#x8C61;&#x7C7B;&#x578B;&#x7528;&#x4E8E;&#x4E0D;&#x540C;&#x7EC4;&#x4EF6;&#x7684; <a href="#todo">minimise the coupling</a>&#x3002; <a href="#todo">Duck typing</a> &#x662F;&#x4E00;&#x79CD;&#x901A;&#x8FC7;&#x6D88;&#x9664;&#x663E;&#x5F0F;&#x63A5;&#x53E3;&#x6765;&#x5F3A;&#x5236;&#x6267;&#x884C;&#x8BE5;&#x539F;&#x5219;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#todo">Object-Orientated Programming</a></li>
+<li><a href="#solid">SOLID</a></li>
+<li><a href="#todo">Duck Typing</a></li>
+<li><a href="#todo">Decoupling</a></li>
+</ul>
+<h3 id="&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;&#x539F;&#x5219;-the-dependency-inversion-principle">&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;&#x539F;&#x5219; (The Dependency Inversion Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dependency_inversion_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%BE%9D%E8%B5%96%E5%8F%8D%E8%BD%AC%E5%8E%9F%E5%88%99" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x9AD8;&#x7EA7;&#x6A21;&#x5757;&#x4E0D;&#x5E94;&#x8BE5;&#x4F9D;&#x8D56;&#x4E8E;&#x4F4E;&#x7EA7;&#x5B9E;&#x73B0;&#x3002;</p>
+</blockquote>
+<p><a href="#solid">SOLID</a> &#x7684;&#x7B2C;&#x4E94;&#x4E2A;&#x539F;&#x5219;&#x3002;&#x8BE5;&#x539F;&#x5219;&#x6307;&#x51FA;&#xFF0C;&#x66F4;&#x9AD8;&#x7EA7;&#x522B;&#x7684;&#x534F;&#x8C03;&#x7EC4;&#x4EF6;&#x4E0D;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x5176;&#x4F9D;&#x8D56;&#x9879;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A;&#x4ECE;&#x7F51;&#x7AD9;&#x8BFB;&#x53D6;&#x5143;&#x6570;&#x636E;&#x7684;&#x7A0B;&#x5E8F;&#x3002;&#x6211;&#x4EEC;&#x5047;&#x8BBE;&#x4E3B;&#x8981;&#x7EC4;&#x4EF6;&#x5FC5;&#x987B;&#x77E5;&#x9053;&#x4E0B;&#x8F7D;&#x7F51;&#x9875;&#x5185;&#x5BB9;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x4EE5;&#x53CA;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x5143;&#x6570;&#x636E;&#x7684;&#x7EC4;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8003;&#x8651;&#x4F9D;&#x8D56;&#x53CD;&#x8F6C;&#xFF0C;&#x4E3B;&#x8981;&#x7EC4;&#x4EF6;&#x5C06;&#x4EC5;&#x4F9D;&#x8D56;&#x4E8E;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5B57;&#x8282;&#x6570;&#x636E;&#x7684;&#x62BD;&#x8C61;&#x7EC4;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x4E00;&#x4E2A;&#x80FD;&#x591F;&#x4ECE;&#x5B57;&#x8282;&#x6D41;&#x4E2D;&#x8BFB;&#x53D6;&#x5143;&#x6570;&#x636E;&#x7684;&#x62BD;&#x8C61;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E3B;&#x8981;&#x7EC4;&#x4EF6;&#x4E0D;&#x9700;&#x8981;&#x4E86;&#x89E3; TCP&#x3001;IP&#x3001;HTTP&#x3001;HTML &#x7B49;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x5F88;&#x590D;&#x6742;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4F3C;&#x4E4E;&#x53EF;&#x4EE5;&#x53CD;&#x8F6C;&#x7CFB;&#x7EDF;&#x7684;&#x9884;&#x671F;&#x4F9D;&#x8D56;&#x6027;&#xFF08;&#x56E0;&#x6B64;&#x5F97;&#x540D;&#xFF09;&#x3002;&#x5B9E;&#x8DF5;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E5F;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x5355;&#x72EC;&#x7684;&#x7F16;&#x6392;&#x7EC4;&#x4EF6;&#x5FC5;&#x987B;&#x786E;&#x4FDD;&#x62BD;&#x8C61;&#x7C7B;&#x578B;&#x7684;&#x6B63;&#x786E;&#x5B9E;&#x73B0;&#x88AB;&#x4F7F;&#x7528;&#xFF08;&#x4F8B;&#x5982;&#x5728;&#x524D;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x5143;&#x6570;&#x636E;&#x8BFB;&#x53D6;&#x5668;&#x7EC4;&#x4EF6;&#x3001;HTTP &#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x529F;&#x80FD;&#x548C; HTML &#x5143;&#x6807;&#x7B7E;&#x8BFB;&#x53D6;&#x5668;&#xFF09;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x8FD9;&#x6D89;&#x53CA;&#x8BF8;&#x5982; <a href="#todo">Inversion of Control</a> &#x548C; <a href="#todo">Dependency Injection</a> &#x4E4B;&#x7C7B;&#x7684;&#x6A21;&#x5F0F;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#todo">Object-Orientated Programming</a></li>
+<li><a href="#solid">SOLID</a></li>
+<li><a href="#todo">Inversion of Control</a></li>
+<li><a href="#todo">Dependency Injection</a></li>
+</ul>
+<h3 id="&#x4E0D;&#x8981;&#x91CD;&#x590D;&#x4F60;&#x81EA;&#x5DF1;&#x539F;&#x5219;-the-dry-principle">&#x4E0D;&#x8981;&#x91CD;&#x590D;&#x4F60;&#x81EA;&#x5DF1;&#x539F;&#x5219; (The DRY Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/%E4%B8%80%E6%AC%A1%E4%B8%94%E4%BB%85%E4%B8%80%E6%AC%A1" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x5757;&#x77E5;&#x8BC6;&#x90FD;&#x5FC5;&#x987B;&#x662F;&#x5355;&#x4E00;&#x3001;&#x660E;&#x786E;&#x800C;&#x6743;&#x5A01;&#x7684;&#x3002;</p>
+</blockquote>
+<p>DRY &#x662F; <strong>Do not Repeat Yourself</strong> &#x7684;&#x7F29;&#x5199;&#x3002;&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x65E8;&#x5728;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x51CF;&#x5C11;&#x4EE3;&#x7801;&#x7684;&#x91CD;&#x590D;&#x6027;&#xFF0C;&#x5E76;&#x5C06;&#x516C;&#x5171;&#x4EE3;&#x7801;&#x4FDD;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x3002;&#x6700;&#x521D;&#x7531;&#x5B89;&#x5FB7;&#x9C81;&#xB7;&#x4EA8;&#x7279;&#x548C;&#x6234;&#x592B;&#xB7;&#x6258;&#x9A6C;&#x65AF;&#x5728; 1999 &#x5E74;&#x51FA;&#x7248;&#x7684;&#x300A;&#x7A0B;&#x5E8F;&#x5458;&#x4FEE;&#x70BC;&#x4E4B;&#x9053;&#x300B;&#x4E2D;&#x5F15;&#x7528;&#x3002;</p>
+<blockquote>
+<p>&#x4E0E; DRY &#x76F8;&#x53CD;&#x7684;&#x662F; <em>WET</em>&#xFF08;&#x529F;&#x80FD;&#x5B9E;&#x73B0;&#x4E24;&#x6B21;&#x6216;&#x8005;&#x559C;&#x6B22;&#x6253;&#x5B57; Write Everything Twice or We Enjoy Typing&#xFF09;&#x3002;</p>
+</blockquote>
+<p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5728;&#x4E24;&#x4E2A;&#x6216;&#x66F4;&#x591A;&#x7684;&#x5730;&#x65B9;&#x6709;&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; DRY &#x539F;&#x5219;&#x5C06;&#x5B83;&#x4EEC;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x4E2A;&#xFF0C;&#x5E76;&#x5728;&#x4EFB;&#x4F55;&#x4F60;&#x9700;&#x8981;&#x7684;&#x5730;&#x65B9;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li>&#x300A;&#x7A0B;&#x5E8F;&#x5458;&#x4FEE;&#x70BC;&#x4E4B;&#x9053;&#x300B;<a href="https://en.wikipedia.org/wiki/The_Pragmatic_Programmer" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li>&#x300A;&#x7A0B;&#x5E8F;&#x5458;&#x4FEE;&#x70BC;&#x4E4B;&#x9053;&#x300B;<a href="https://book.douban.com/subject/1417047/" target="_blank">&#x8C46;&#x74E3;</a></li>
+</ul>
+<h3 id="kiss-&#x539F;&#x5219;-the-kiss-principle">KISS &#x539F;&#x5219; (The KISS Principle)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/KISS_principle" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+<li><a href="https://zh.wikipedia.org/wiki/KISS%E5%8E%9F%E5%88%99" target="_blank">&#x4E2D;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<blockquote>
+<p>&#x4FDD;&#x6301;&#x7B80;&#x5355;&#x548C;&#x76F4;&#x767D;&#x3002;</p>
+</blockquote>
+<p>KISS &#x539F;&#x5219;&#x6307;&#x660E;&#x4E86;&#x5982;&#x679C;&#x5927;&#x591A;&#x6570;&#x7684;&#x7CFB;&#x7EDF;&#x80FD;&#x591F;&#x4FDD;&#x6301;&#x7B80;&#x5355;&#x800C;&#x975E;&#x590D;&#x6742;&#x5316;&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x4EEC;&#x4FBF;&#x80FD;&#x591F;&#x5DE5;&#x4F5C;&#x5728;&#x6700;&#x4F73;&#x72B6;&#x6001;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x7B80;&#x5355;&#x6027;&#x5E94;&#x8BE5;&#x662F;&#x8BBE;&#x8BA1;&#x65F6;&#x7684;&#x5173;&#x952E;&#x6307;&#x6807;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x8981;&#x907F;&#x514D;&#x4E0D;&#x5FC5;&#x8981;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x3002;&#x8FD9;&#x4E2A;&#x77ED;&#x8BED;&#x6700;&#x521D;&#x51FA;&#x81EA; 1960 &#x5E74;&#x7684;&#x7F8E;&#x56FD;&#x6D77;&#x519B;&#x98DE;&#x673A;&#x5DE5;&#x7A0B;&#x5E08;&#x51EF;&#x5229; &#xB7; &#x7EA6;&#x7FF0;&#x900A; (Kelly Johnson)&#x3002;</p>
+<p>&#x8FD9;&#x4E00;&#x539F;&#x5219;&#x7684;&#x6700;&#x597D;&#x4F8B;&#x8BC1;&#x4FBF;&#x662F;&#x7EA6;&#x7FF0;&#x900A;&#x7ED9;&#x8BBE;&#x8BA1;&#x5DE5;&#x7A0B;&#x5E08;&#x4E00;&#x4E9B;&#x5B9E;&#x7528;&#x5DE5;&#x5177;&#x7684;&#x6545;&#x4E8B;&#x3002;&#x90A3;&#x65F6;&#x7684;&#x4ED6;&#x4EEC;&#x6B63;&#x9762;&#x4E34;&#x7740;&#x4E00;&#x4E2A;&#x6311;&#x6218;&#xFF0C;&#x5373;&#x4ED6;&#x4EEC;&#x53C2;&#x4E0E;&#x8BBE;&#x8BA1;&#x7684;&#x55B7;&#x6C14;&#x5F0F;&#x98DE;&#x673A;&#x5FC5;&#x987B;&#x80FD;&#x591F;&#x8BA9;&#x666E;&#x901A;&#x7684;&#x673A;&#x68B0;&#x5E08;&#x5728;&#x6218;&#x573A;&#x4E0A;&#x4EC5;&#x4EC5;&#x7528;&#x8FD9;&#x4E9B;&#x5DE5;&#x5177;&#x8FDB;&#x884C;&#x7EF4;&#x4FEE;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x201C;&#x76F4;&#x767D;&#x201D;&#x8FD9;&#x4E2A;&#x8BCD;&#x5E94;&#x6307;&#x7684;&#x662F;&#x635F;&#x574F;&#x7684;&#x4E8B;&#x7269;&#x672C;&#x8EAB;&#x548C;&#x4FEE;&#x590D;&#x7528;&#x5DE5;&#x5177;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x4E24;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x800C;&#x975E;&#x5DE5;&#x7A0B;&#x5E08;&#x4EEC;&#x81EA;&#x8EAB;&#x7684;&#x80FD;&#x529B;&#x6C34;&#x5E73;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%e7%9b%96%e5%b0%94%e5%ae%9a%e5%be%8b-galls-law">&#x76D6;&#x5C14;&#x5B9A;&#x5F8B;</a></li>
+</ul>
+<h3 id="&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x5B83;&#x539F;&#x5219;-yagni">&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x5B83;&#x539F;&#x5219; (YAGNI)</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></li>
+</ul>
+<p>&#x8FD9;&#x662F; <em><strong>Y</strong>ou <strong>A</strong>ren&apos;t <strong>G</strong>onna <strong>N</strong>eed <strong>I</strong>t</em> &#x7684;&#x7F29;&#x5199;&#x3002;</p>
+<blockquote>
+<p>&#x53EA;&#x6709;&#x5F53;&#x4F60;&#x9700;&#x8981;&#x67D0;&#x4E9B;&#x4E1C;&#x897F;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x624D;&#x53BB;&#x5B9E;&#x73B0;&#x5B83;&#x4EEC;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5728;&#x4F60;&#x9884;&#x89C1;&#x7684;&#x65F6;&#x5019;&#x3002;</p>
+<p><a href="https://twitter.com/RonJeffries" target="_blank">Ron Jeffries</a> &#x662F;&#x6781;&#x9650;&#x7F16;&#x7A0B;&#x7684;&#x521B;&#x59CB;&#x4EBA;&#x4E4B;&#x4E00;&#x4EE5;&#x53CA;&#x4E66;&#x7C4D;&#x300A;Extreme Programming Installed&#x300B;&#x7684;&#x4F5C;&#x8005;&#x3002;</p>
+</blockquote>
+<p>&#x6781;&#x9650;&#x7F16;&#x7A0B;&#x539F;&#x5219;&#x544A;&#x8BEB;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#xFF0C;&#x4ED6;&#x4EEC;&#x5E94;&#x8BE5;&#x53EA;&#x5B9E;&#x73B0;&#x5F53;&#x524D;&#x6240;&#x9700;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5E76;&#x907F;&#x514D;&#x5B9E;&#x73B0;&#x672A;&#x6765;&#x9700;&#x8981;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4EC5;&#x5728;&#x5FC5;&#x8981;&#x65F6;&#x624D;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x9075;&#x5B88;&#x8FD9;&#x4E00;&#x539F;&#x5219;&#x53EF;&#x4EE5;&#x51CF;&#x5C0F;&#x4EE3;&#x7801;&#x5E93;&#x5927;&#x5C0F;&#xFF0C;&#x540C;&#x65F6;&#x907F;&#x514D;&#x65F6;&#x95F4;&#x548C;&#x751F;&#x4EA7;&#x529B;&#x6D6A;&#x8D39;&#x5728;&#x6CA1;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x529F;&#x80FD;&#x4E0A;&#x3002;</p>
+<p>&#x53C2;&#x89C1;&#xFF1A;</p>
+<ul>
+<li><a href="#%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95">&#x9605;&#x8BFB;&#x6E05;&#x5355;&#x300A;&#x6781;&#x9650;&#x7F16;&#x7A0B;&#x5B89;&#x88C5;&#x300B;</a></li>
+</ul>
+<h3 id="&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x7684;&#x8C2C;&#x8BBA;-the-fallacies-of-distributed-computing">&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x7684;&#x8C2C;&#x8BBA; (The Fallacies of Distributed Computing)</h3>
+<p><a href="https://en.wikipedia.org/wiki/You_aren%https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing" target="_blank">&#x82F1;&#x6587;&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a></p>
+<p>&#x53C8;&#x79F0; <em>&#x7F51;&#x7EDC;&#x8BA1;&#x7B97;&#x7684;&#x8C2C;&#x8BEF;</em>&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x5173;&#x4E8E;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x7684;&#x731C;&#x60F3;&#xFF08;&#x6216;&#x8005;&#x770B;&#x6CD5;&#xFF09;&#xFF0C;&#x8FD9;&#x4E9B;&#x731C;&#x60F3;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x8D77;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x5931;&#x8D25;&#x3002;&#x8FD9;&#x4E9B;&#x5047;&#x8BBE;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x7F51;&#x7EDC;&#x53EF;&#x9760;</li>
+<li>&#x5EF6;&#x8FDF;&#x4E3A;&#x96F6;</li>
+<li>&#x5E26;&#x5BBD;&#x65E0;&#x9650;</li>
+<li>&#x7F51;&#x7EDC;&#x5B89;&#x5168;</li>
+<li>&#x62D3;&#x6251;&#x6052;&#x5B9A;</li>
+<li>&#x6709;&#x7BA1;&#x7406;&#x5458;</li>
+<li>&#x8FD0;&#x8F93;&#x6210;&#x672C;&#x4E3A;&#x96F6;</li>
+<li>&#x7F51;&#x7EDC;&#x4E3A;&#x540C;&#x6784;&#x7684;</li>
+</ul>
+<p>&#x524D; 4 &#x5404;&#x9879;&#x76EE;&#x7531; <a href="https://en.wikipedia.org/wiki/Bill_Joy" target="_blank">Bill Joy</a> &#x548C; <a href="https://twitter.com/aka_pugs" target="_blank">Tom Lyon</a> &#x4E8E; 1991 &#x5DE6;&#x53F3;&#x63D0;&#x51FA;&#x3002;&#x5E76;&#x88AB; <a href="https://en.wikipedia.org/wiki/James_Gosling" target="_blank">James Gosling</a> &#x9996;&#x6B21;&#x5F52;&#x7C7B;&#x4E8E;&#x201C;&#x7F51;&#x7EDC;&#x8BA1;&#x7B97;&#x7684;&#x8C2C;&#x8BEF;&#x201D;&#xFF1B;&#x540E; <a href="https://en.wikipedia.org/wiki/L._Peter_Deutsch" target="_blank">L. Peter Deutsch</a> &#x6DFB;&#x52A0;&#x4E86;&#x7B2C; 5&#x3001;6&#x3001;7 &#x4E2A;&#x8C2C;&#x8BEF;&#xFF1B;90 &#x5E74;&#x4EE3;&#x672B;&#xFF0C;Gosling &#x6DFB;&#x52A0;&#x4E86;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8C2C;&#x8BEF;&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#x53D7;&#x5230;&#x4E86; <a href="https://en.wikipedia.org/wiki/Sun_Microsystems" target="_blank">&#x592A;&#x9633;&#x5FAE;&#x7CFB;&#x7EDF; (Sun Microsystems)</a> &#x5185;&#x90E8;&#x5F53;&#x65F6;&#x6240;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x60C5;&#x7684;&#x542F;&#x53D1;&#x3002;</p>
+<p>&#x5728;&#x8BBE;&#x8BA1;&#x5F39;&#x6027;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5E94;&#x8BE5;&#x4ED4;&#x7EC6;&#x8003;&#x8651;&#x8FD9;&#x4E9B;&#x8C2C;&#x8BEF;&#xFF0C;&#x5E76;&#x5047;&#x8BBE;&#x5176;&#x4E2D;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x8C2C;&#x8BEF;&#x90FD;&#x53EF;&#x80FD;&#x5F15;&#x8D77;&#x5904;&#x7406;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x7684;&#x590D;&#x6742;&#x6027;&#x548C;&#x73B0;&#x5B9E;&#x6027;&#x65F6;&#x7684;&#x903B;&#x8F91;&#x7F3A;&#x9677;&#x3002;</p>
+<p>&#x53C2;&#x89C1;:</p>
+<ul>
+<li><a href="https://medium.com/baseds/foraging-for-the-fallacies-of-distributed-computing-part-1-1b35c3b85b53" target="_blank">&#x5BFB;&#x627E;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x7684;&#x8C2C;&#x8BEF;&#xFF08;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#xFF09; - Vaidehi Joshi
+on Medium</a></li>
+<li><a href="http://java.sys-con.com/node/38665" target="_blank">&#x5341;&#x5E74;&#x540E;&#xFF0C;&#x5FB7;&#x610F;&#x5FD7; (Peter Deutsch) &#x7684;&#x8C2C;&#x8BBA;</a></li>
+</ul>
+<h2 id="&#x9605;&#x8BFB;&#x6E05;&#x5355;">&#x9605;&#x8BFB;&#x6E05;&#x5355;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x89C9;&#x5F97;&#x8FD9;&#x4E9B;&#x6982;&#x5FF5;&#x5F88;&#x6709;&#x8DA3;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x4F1A;&#x559C;&#x6B22;&#x4EE5;&#x4E0B;&#x4E66;&#x7C4D;&#x3002;</p>
+<ul>
+<li>&#x300A;&#x6781;&#x9650;&#x7F16;&#x7A0B;&#x5B89;&#x88C5;&#x300B;<a href="https://www.goodreads.com/en/book/show/67834" target="_blank">&#x8C37;&#x6B4C;&#x9605;&#x8BFB;&#x5730;&#x5740;</a> - &#x6DB5;&#x76D6;&#x6781;&#x9650;&#x7F16;&#x7A0B;&#x7684;&#x6838;&#x5FC3;&#x539F;&#x5219;&#x3002;</li>
+<li>&#x300A;&#x4EBA;&#x6708;&#x795E;&#x8BDD;&#x300B;<a href="https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month" target="_blank">&#x8C37;&#x6B4C;&#x9605;&#x8BFB;&#x5730;&#x5740;</a>&#x3001;<a href="https://book.douban.com/subject/26358448/" target="_blank">&#x8C46;&#x74E3;&#x5730;&#x5740;</a> - &#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x7684;&#x7ECF;&#x5178;&#x4E66;&#x7C4D;&#x3002;&#x8FD9;&#x672C;&#x4E66;&#x7684;&#x4E2D;&#x5FC3;&#x4E3B;&#x9898;&#x5C31;&#x662F;<a href="#%E5%B8%83%E9%B2%81%E5%85%8B%E6%96%AF%E6%B3%95%E5%88%99-brookss-law">&#x5E03;&#x9C81;&#x514B;&#x65AF;&#x6CD5;&#x5219;</a> &#x3002;</li>
+<li>&#x300A;&#x54E5;&#x5FB7;&#x5C14;&#x3001;&#x827E;&#x820D;&#x5C14;&#x3001;&#x5DF4;&#x8D6B;&#xFF1A;&#x96C6;&#x5F02;&#x74A7;&#x4E4B;&#x5927;&#x6210;&#x300B;<a href="https://www.goodreads.com/book/show/24113.G_del_Escher_Bach" target="_blank">&#x8C37;&#x6B4C;&#x9605;&#x8BFB;&#x5730;&#x5740;</a>&#x3001;<a href="https://book.douban.com/subject/1291204/" target="_blank">&#x8C46;&#x74E3;&#x5730;&#x5740;</a> - &#x8FD9;&#x672C;&#x4E66;&#x5F88;&#x96BE;&#x5206;&#x7C7B;&#x3002;<a href="#%e4%be%af%e4%b8%96%e8%be%be%e5%ae%9a%e5%be%8b-hofstadters-law">&#x4FAF;&#x4E16;&#x8FBE;&#x5B9A;&#x5F8B;</a> &#x6765;&#x81EA;&#x6B64;&#x4E66;&#x3002;</li>
+<li>&#x300A;&#x5446;&#x4F2F;&#x7279;&#x539F;&#x5219;&#x300B;<a href="https://www.goodreads.com/book/show/85574.The_Dilbert_Principle" target="_blank">&#x8C37;&#x6B4C;&#x9605;&#x8BFB;&#x5730;&#x5740;</a> - &#x4E00;&#x672C;&#x5BA1;&#x89C6;&#x7F8E;&#x56FD;&#x4F01;&#x4E1A;&#x7684;&#x6F2B;&#x753B;&#x4E66;&#xFF0C;&#x5176;&#x4F5C;&#x8005;&#x521B;&#x9020;&#x4E86;<a href="#%e5%91%86%e4%bc%af%e7%89%b9%e6%b3%95%e5%88%99-the-dilbert-principle">&#x5446;&#x4F2F;&#x7279;&#x6CD5;&#x5219;</a>&#x3002;</li>
+<li>&#x300A;&#x5F7C;&#x5F97;&#x539F;&#x7406;&#x300B;<a href="https://www.goodreads.com/book/show/890728.The_Peter_Principle" target="_blank">&#x8C37;&#x6B4C;&#x9605;&#x8BFB;&#x5730;&#x5740;</a> - &#x4E00;&#x672C;&#x4E13;&#x6CE8;&#x4E8E;&#x5927;&#x578B;&#x7EC4;&#x7EC7;&#x548C;&#x4EBA;&#x5458;&#x7BA1;&#x7406;&#x7684;&#x6311;&#x6218;&#x7684;&#x6F2B;&#x753B;&#x4E66;&#xFF0C;&#x4E5F;&#x662F;<a href="#%e5%bd%bc%e5%be%97%e5%8e%9f%e7%90%86-the-peter-principle">&#x5F7C;&#x5F97;&#x539F;&#x7406;</a>&#x7684;&#x6765;&#x6E90;&#x3002;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="tool.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 工具/软件类">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"hacker-laws","level":"1.5","depth":1,"previous":{"title":"工具/软件类","level":"1.4","depth":1,"path":"part/tool.md","ref":"part/tool.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part/hacker-laws.md","mtime":"2019-12-06T08:15:00.806Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-06T08:19:50.932Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
